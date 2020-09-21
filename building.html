@@ -32,60 +32,12 @@
 <a class="toggle" tabindex="0" ><img src="assets/hamburger_icon.svg" alt="hamburger" id="hamburger"></a>
 <a id="index" href="index.html"><img src="assets/home.png" alt="home" id="home"></a>
 <ul>
-<li><a href="#supervised-learning">Supervised learning</a><ul>
-<li><a href="#statistical-classification-criteria">Statistical classification criteria</a></li>
-<li><a href="#score-functions">Score functions</a></li>
-<li><a href="#the-conditional-expectation">The conditional expectation</a></li>
-<li><a href="#from-scores-to-classifiers">From scores to classifiers</a></li>
-</ul></li>
-<li><a href="#sensitive-characteristics">Sensitive characteristics</a><ul>
-<li><a href="#no-fairness-through-unawareness">No fairness through unawareness</a></li>
-</ul></li>
-<li><a href="#formal-non-discrimination-criteria">Formal non-discrimination criteria</a><ul>
-<li><a href="#independence">Independence</a></li>
-<li><a href="#limitations-of-independence">Limitations of independence</a></li>
-<li><a href="#interlude-how-to-satisfy-fairness-criteria">Interlude: How to satisfy fairness criteria</a></li>
-<li><a href="#separation">Separation</a></li>
-<li><a href="#achieving-separation">Achieving separation</a></li>
-<li><a href="#sufficiency">Sufficiency</a></li>
-</ul></li>
-<li><a href="#calibration-and-sufficiency">Calibration and sufficiency</a><ul>
-<li><a href="#calibration-by-group">Calibration by group</a></li>
-<li><a href="#calibration-by-group-as-a-consequence-of-unconstrained-learning">Calibration by group as a consequence of unconstrained learning</a></li>
-</ul></li>
-<li><a href="#relationships-between-criteria">Relationships between criteria</a><ul>
-<li><a href="#independence-versus-sufficiency">Independence versus Sufficiency</a></li>
-<li><a href="#independence-versus-separation">Independence versus Separation</a></li>
-<li><a href="#separation-versus-sufficiency">Separation versus Sufficiency</a></li>
-</ul></li>
-<li><a href="#inherent-limitations-of-observational-criteria">Inherent limitations of observational criteria</a><ul>
-<li><a href="#scenario-i">Scenario I</a></li>
-<li><a href="#scenario-ii">Scenario II</a></li>
-<li><a href="#different-interpretations">Different interpretations</a></li>
-<li><a href="#indistinguishability">Indistinguishability</a></li>
-<li><a href="#a-forced-perspective-problem">A forced perspective problem</a></li>
-</ul></li>
-<li><a href="#case-study-credit-scoring">Case study: Credit scoring</a><ul>
-<li><a href="#score-distribution">Score distribution</a></li>
-<li><a href="#performance-variables-and-roc-curves">Performance variables and ROC curves</a></li>
-<li><a href="#comparison-of-different-criteria">Comparison of different criteria</a></li>
-<li><a href="#calibration-values">Calibration values</a></li>
-</ul></li>
-<li><a href="#problem-set-criminal-justice-case-study">Problem set: Criminal justice case study</a><ul>
-<li><a href="#calibrationsufficiency">Calibration/sufficiency</a></li>
-<li><a href="#error-ratesseparation">Error rates/separation</a></li>
-<li><a href="#risk-factors-and-interventions">Risk factors and interventions</a></li>
-</ul></li>
-<li><a href="#problem-set-data-modeling-of-traffic-stops">Problem set: Data modeling of traffic stops</a><ul>
-<li><a href="#stop-rates">Stop rates</a></li>
-<li><a href="#post-stop-outcomes">Post-stop outcomes</a></li>
-<li><a href="#data-quality">Data quality</a></li>
-</ul></li>
-<li><a href="#what-is-the-purpose-of-a-fairness-criterion">What is the purpose of a fairness criterion?</a></li>
-<li><a href="#bibliographic-notes-and-further-reading">Bibliographic notes and further reading</a><ul>
-<li><a href="#a-dictionary-of-criteria">A dictionary of criteria</a></li>
-</ul></li>
-<li><a href="#bibliography">References</a></li>
+<li><a href="#timeline">Timeline and Product Management</a></li>
+<li><a href="#front-end">Front-End Development</a></li>
+<li><a href="#back-end">Back-End Development</a></li>
+<li><a href="#examples">Open Data Pipeline Examples</a></li>
+<li><a href="#considerations">Additional Considerations</a></li>
+<li><a href="#resources">Recommended Resources</a></li>
 </ul>
 </div>
 </nav>
@@ -156,7 +108,7 @@
     <br/>
     </div>
 </div>
-<section id="supervised-learning" class="level1">
+<section id="timeline" class="level1"></section>
 <h1>Timeline and Product Management</h1>
 <p>Building an open data portal requires a methodological approach to the development process. <span style="color: #222222;">The recommended process is based on the agile development model called Scrum.&nbsp; Scrum is based on a small set of core values:</span></p>
 <ul>
@@ -167,6 +119,7 @@
 </ul>
 <p><span style="color: #222222;">At a high level, the Scrum agile development holds all stakeholders of the project accountable from the team, individuals, and any advisors. It is always important to keep in mind a longer timeline focused on the target date for the team to have a MVP, or minimal viable product, ready by and a shorter timeline focused on the tasks for each week&rsquo;s sprints.</span></p>
 <p><span style="color: #222222;">Refer to </span><a href="https://www.atlassian.com/agile/scrum" target="_blank" rel="noopener">this guide</a><span style="color: #222222;"> for more details on Scrum.</span></p>
+<section id="front-end" class="level1"></section>
 <h1>Front-End Development</h1>
 <p>The front-end of your portal will be your first and main point of contact with new users. In the following section, we discuss key features and design principles to maximize user experience.</p>
 <h2>Home Page</h2>
@@ -194,6 +147,7 @@
 <p>A data portal built by students, for students should be showcased as such. Leave this page to tell your group&rsquo;s story and motivations. Provide outlets for feedback, questions, and requests from community members looking to get involved, and respond to these requests in a timely manner.</p>
 <h2>Accessibility</h2>
 <p>The style of your open data portal should feel welcoming, clean, and user friendly with minimal attributes. Have some fun choosing colors and themes that support your vision for the aesthetic, just be sure to follow <a href="https://adasitecompliance.com/ada-color-contrast-checker/" target="_blank" rel="noopener">ADA Site Compliance</a>. Assume many of your users won&rsquo;t know about open data portals and incorporate features that can engage users from a broad range of backgrounds. A good way to check whether or not you&rsquo;ve done a good job with this is to reference <a href="http://www.uxness.in/2015/02/10-heuristic-principles-jakob-nielsens.html" target="_blank" rel="noopener">these 10 heuristic principles</a>.</p>
+<section id="back-end" class="level1"></section>
 <h1>Back-End Development</h1>
 <p>Some open data portals may choose to go serverless. Regardless of whether you have a full-out database and server you will need some sort of backend datastore and system for managing permissions on users. Here are some general best practices for creating an effective open data portal backend that is applicable for college students.</p>
 <h2>Search and Filtering</h2>
@@ -204,6 +158,7 @@
 <p>A relatively convenient structure for an open data portal is to store metadata in a separate file from your datasets. This enables you to query your metadata and populate a dataset listings page without having to get all your datasets.</p>
 <h2>Permissions/Authentication System</h2>
 <p>Only authorized users should be able to update metadata and datasets regardless of how or where you store them. Such a permissions system can be as simple as storing your metadata in a Google Sheet that is shared with only a specific set of people and having a similar setup in AWS or another datastore for your datasets.</p>
+<section id="examples" class="level1"></section>
 <h1>Open Data Pipeline Examples</h1>
 <h2><a href="https://github.com/rahulsshukla/nu_open_data_initiative" target="_blank" rel="noopener">Northwestern Open Data Initiative</a>:</h2>
 <p>The Northwestern Open Data Initiative implemented a full-stack Django-React hybridized server in an all-in-one folder to make deployment easy. To store metadata, the team uses PostgreSQL. To store the actual datasets, their back-end team developed a process of first storing datasets in an &lsquo;unapproved&rsquo; AWS S3 bucket, approving them on a Django-based admin panel, and then moving them to the &lsquo;approved&rsquo; AWS S3 bucket. The Django admin panel will allow for non-technical members to view datasets, see user engagement, and approve datasets - a helpful feature as we develop the portal as a product. The React front-end makes requests to the AWS S3 upload url through the Django back-end.</p>
@@ -211,9 +166,11 @@
 <h2><a href="https://github.com/StanfordOpenData/open-data-portal" target="_blank" rel="noopener">Stanford Open Data Project:</a></h2>
 <p>The Stanford Open Data Portal implemented a React frontend hosted using Netlify with AWS S3 buckets for dataset storage. Metadata is stored in a google spreadsheet and a Python script calls the Google Sheets API to download the metadata spreadsheet, convert to JSON, and upload to S3. The AWS console can be used to easily drag and drop both the metadata and individual datasets in CSV format for upload. Another option is to utilize boto3 in the terminal for programmatic access to S3. Credentials in AWS can be managed to give only designated individuals permissions to upload new datasets. Similarly, permissions on Google Sheets can be managed to control access to metadata.&nbsp;</p>
 <p>The React frontend can easily access data and metadata stored in AWS by directly making ajax calls to S3t without the need for a server. This reduces complexity and allows those with less programming experience or those who do not want to have a server to get their open data portal up and running. Additionally, the Stanford team has a google form that it has sent out to several news organizations and on-campus groups to allow for easy dataset submission. The form included questions that we deemed necessary to represent the dataset&rsquo;s context.</p>
+<section id="considerations" class="level1"></section>
 <h1>Additional Considerations</h1>
 <p>Google Analytics is a useful tool for monitoring activity on your portal. Use it to identify pain points in your user&rsquo;s experience as well as determine which datasets users are engaging with.&nbsp;</p>
 <p>Converting data from PDFs to CSVs is an important yet time-consuming task that will likely arise when you are obtaining datasets for your portal. We recommend the following tool for easy PDF scraping: <a href="https://tabula.technology" target="_blank" rel="noopener">https://tabula.technology</a>.</p>
+<section id="resources" class="level1"></section>
 <h1>Recommended Resources</h1>
 <p>Building an open data portal requires knowledge of full-stack development that can be daunting to even relatively experienced university-aged coders. Here are some resources we have collected that may help with building an open data portal.</p>
 <ul>
