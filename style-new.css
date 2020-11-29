@@ -1,0 +1,115 @@
+body{
+    color: #585858;
+}
+.blue-nav{
+    background-color:#0066FF !important;
+    margin: 0;
+}
+
+mark{
+    background-color: #FFEC89;
+    color: #505050;
+}
+
+.keyidea-container{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #e8f1ff;
+    padding: 30px;
+    font-style: italic;
+    margin: 20px 0px;
+}
+.keyidea{
+    font-weight: 600;
+    font-size: 16px;
+    color:#0066FF;
+    font-style: normal;
+}
+article{
+    margin: 30px;
+}
+
+@media screen and (max-width: 500px){
+    h1{
+        font-size:10vw;
+    }
+    h2{
+        font-size:7vw;
+    }
+    h3{
+        font-size:6vw;
+    }
+}
+
+h1{
+    font-size: 3em;
+    color:#282828;
+}
+
+b{
+    font-weight: 500;
+}
+
+h2{
+    color:#0066FF;
+    margin: 20px 0px;
+}
+h3{
+    margin: 20px 0px;
+    color:#282828;
+}
+
+.heading{
+    margin: 30px 0px;
+}
+.accordion {
+background-color: #bcd7ff;
+cursor: pointer;
+padding: 20px;
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+font-size: 15px;
+transition: 0.4s;
+}
+
+.active, .accordion:hover {
+background-color: #90b9f7;
+}
+
+
+.accordion:after {
+    content: '\002B';
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0px 20px;
+    margin-top: 10px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+a {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size cubic-bezier(0,.5,0,1) 0.3s;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    background-size: 100% 1px;
+}
