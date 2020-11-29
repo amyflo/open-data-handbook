@@ -6,9 +6,11 @@ body{
 }
 .blue-nav{
     background-color:#0066FF !important;
-    margin: 0;
 }
 
+main{
+    margin: 10px;
+}
 mark{
     background-color: #FFEC89;
     color: #505050;
@@ -22,18 +24,23 @@ mark{
     padding: 30px;
     font-style: italic;
     margin: 20px 0px;
+    border-radius: 5px;
+    transition: 0.3s;
 }
+
+.keyidea-container:hover{
+    box-shadow: 5px 5px 5px #ededed60;
+    transition: 0.3s;
+}
+
 .keyidea{
     font-weight: 600;
     font-size: 16px;
     color:#0066FF;
     font-style: normal;
 }
-article{
-    margin: 30px;
-}
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
     h1{
         font-size:10vw;
     }
@@ -43,7 +50,45 @@ article{
     h3{
         font-size:6vw;
     }
+    .hidden{
+        display: none;
+        width:0%;
+    }
+    article{
+        margin: auto;
+        width: 100%;
+        padding-top: 40px;
+    }
 }
+
+@media screen and (max-width: 800px){
+    .hidden{
+        display: none;
+    }
+    article{
+        margin: auto;
+        width: 100%;
+        padding-top: 40px;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .show-mobile{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 800px){
+    article{
+        margin: auto;
+        width: 80%;
+        float: right;
+        padding: 80px;
+    }
+}
+
+
 
 h1{
     font-size: 3em;
@@ -67,21 +112,22 @@ h3{
     margin: 30px 0px;
 }
 .accordion {
-background-color: #bcd7ff;
-cursor: pointer;
-padding: 20px;
-width: 100%;
-border: none;
-text-align: left;
-outline: none;
-font-size: 15px;
-transition: 0.4s;
+    background-color: #bcd7ff;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-radius: 5px
 }
 
 .active, .accordion:hover {
 background-color: #90b9f7;
+box-shadow: 5px 5px 5px #ededed;
 }
-
 
 .accordion:after {
     content: '\002B';
@@ -116,3 +162,63 @@ a:hover, a:focus {
     text-decoration: none;
     background-size: 100% 1px;
 }
+
+.button {
+    background-color:#0066FF;
+    border: none;
+    color: white;
+    padding: 12px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    background-image: none;
+    transition: 0.3s;
+    width: 100px;
+}
+
+.button:hover, focus {
+    background-color:#125ed0;
+    color: white;
+    box-shadow: 5px 5px 5px #ededed;
+    transition: 0.3s;
+}
+
+.button-secondary {
+    background-color: white;
+    color:#0066FF;
+    padding: 12px 18px;
+    border-radius: 5px;
+    border: 2px solid #0066FF;
+    text-decoration: none;
+    background-image: none;
+    transition: 0.3s;
+    width: 100px;
+}
+
+.button-secondary:hover, focus {
+    background-color: #e8f1ff;
+    box-shadow: 5px 5px 5px #ededed;
+    transition: 0.3s;
+}
+
+ol {
+    counter-reset: section;
+    list-style-type: none;
+  }
+  
+  .counter::before {
+    counter-increment: section;
+    content: counters(section, ".") " ";
+    color: #0066FF;
+    font-weight: 500;
+  }
+
+  .inactive-li{
+    color: #585858;
+    font-weight: 300;
+  }
+
+  .inactive-li:hover{
+    color: #282828;
+  }
