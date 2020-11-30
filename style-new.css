@@ -20,7 +20,8 @@ body{
 	background-color: #0066FF !important;
 }
 main{
-	margin: 10px;
+    margin: 10px;
+    margin-bottom: 200px;
 }
 mark{
 	background-color: #fef3bb;
@@ -43,8 +44,8 @@ mark{
 }
 .keyidea{
 	font-weight: 600;
-	font-size: 16px;
-	color: #0066FF;
+    font-size: 16px;
+    color: #125ed0;
 	font-style: normal;
 }
 
@@ -57,7 +58,10 @@ mark{
 	}
 	h3{
 	font-size: 6vw;
-	}
+    }
+    h4{
+        font-size: 5.5vw;
+    }
 	.hidden{
 	display: none;
 	width: 0%;
@@ -65,7 +69,7 @@ mark{
 	article{
 	margin: auto;
 	width: 100%;
-	}
+    }
 }
 @media screen and (min-width: 600px){
 	article{
@@ -84,7 +88,7 @@ mark{
 	article{
 	margin: auto;
 	width: 100%;
- }
+    }
 }
 
 @media screen and (min-width: 800px){
@@ -101,7 +105,7 @@ mark{
         float: right;
         margin: auto;
         width: 80%;
- }
+    }
 }
 
 
@@ -111,7 +115,7 @@ h1{
 }
 b{
  font-weight: 600;
- color: #505050;
+ color: #125ed0;
 }
 h2{
  color: #0066FF;
@@ -120,6 +124,10 @@ h2{
 h3{
  margin: 20px 0px;
  color: #282828;
+}
+h4{
+    margin: 20px 0px;
+    color: #282828;
 }
 .heading{
  margin: 30px 0px;
@@ -181,6 +189,7 @@ a:hover, a:focus {
  background-image: none;
  transition: 0.3s;
  width: 100px;
+ margin:30px 0px;
 }
 .button:hover, focus {
  background-color: #125ed0;
@@ -198,6 +207,7 @@ a:hover, a:focus {
  background-image: none;
  transition: 0.3s;
  width: 100px;
+ margin:30px 0px;
 }
 .button-secondary:hover, focus {
  background-color: #e8f1ff;
@@ -214,7 +224,7 @@ ol {
 .counter::before {
  counter-increment: section;
  content: counters(section, ".") " ";
- color: #0066FF;
+ color: #125ed0;
  font-weight: 500;
 }
 
@@ -234,4 +244,40 @@ ol {
 .inactive-li:hover{
  color: #282828;
 }
-	
+    
+.column{
+    padding: 20px;
+}
+
+.card{
+    transition: 0.3s;
+    margin: 10px;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 5px #ededed40;
+    transition: 0.3s;
+    transform: scale(1.01);
+}
+
+#footer {
+    margin-top: 30px;
+    text-align: center;
+    padding: 3px;
+    background-color: #0066FF;
+    color: white;
+    bottom:0px;
+  }
+
+  header{
+      text-align: center;
+      padding: 10vh 0vh 2vh 0vh;
+  }
+
+  .hidden{
+      height: 100%;
+  }
+
+  figcaption{
+    color: #125ed0;
+  }
