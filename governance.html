@@ -4,205 +4,248 @@
     <meta charset="utf-8">
     <meta name="generator" content="pandoc">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta name="author" content="Solon Barocas">
-    <meta name="author" content="Moritz Hardt">
-    <meta name="author" content="Arvind Narayanan">
-    <title>Data Governance</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script>
-    <script>document.addEventListener("DOMContentLoaded", function () {
-      var mathElements = document.getElementsByClassName("math");
-      for (var i = 0; i < mathElements.length; i++) {
-        var texText = mathElements[i].firstChild;
-        if (mathElements[i].tagName == "SPAN") { katex.render(texText.data, mathElements[i], { displayMode: mathElements[i].classList.contains("display"), throwOnError: false } );
-      }}});</script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css" />
-    <!--[if lt IE 9]>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-    <![endif]-->
-  </head>
-<body>
-<article>
-<header>
-<div id="chapter">Chapter 4</div>
-<h1 class="title">Data Governance&nbsp;</h1>
-</header>
-<nav id="TOC">
-  <div id="menuToggle">
-  <a class="toggle" tabindex="0" ><img src="assets/hamburger_icon.svg" alt="hamburger" id="hamburger"></a>
-  <a id="index" href="index.html"><img src="assets/home.png" alt="home" id="home"></a>
-  <ul>
-  <li><a href="#stanford-open-data-project"><strong>Stanford Open Data Project</strong></a></li>
-  <li><a href="#sodp-problem">Problem</a></li>
-  <li><a href="#sodp-vision">Vision</a></li>
-  <li><a href="#sodp-process">Process</a></li>
-  <li><a href="#sodp-result">Result</a></li>
-  <li><a href="#sodp-lessons-learned">Lessons Learned</a></li>
-  <li><a href="#northwestern-open-data-initiative"><strong>Northwestern Open Data Initiative</strong></a></li>
-  <li><a href="#nodi-problem">Problem</a></li>
-  <li><a href="#nodi-vision">Vision</a></li>
-  <li><a href="#nodi-process">Process</a></li>
-  <li><a href="#nodi-result">Result</a></li>
-  <li><a href="#nodi-lessons-learned">Lessons Learned</a></li>
-  </ul>
-  </div>
-  </nav>
-<div id="lastupdate">
-Work in progress - Last updated: Mon Sep 21, 2020
-</div>
-<h1>Principles</h1>
-<p>Data governance is an institutional framework that promotes accountable and ethical &ldquo;planning, oversight, and control over the management of data and the use of data and data-related sources&rdquo; (<a href="https://www.cio.com/article/3521011/what-is-data-governance-a-best-practices-framework-for-managing-data-assets.html" target="_blank" rel="noopener">DAMA</a>). Simply put, <span style="font-weight: bold;">strong data governance fosters accountability and ethics in management and use of data</span>. It establishes mutual trust within the community your open data portal serves, and mitigates potential harms to individuals and populations.</p>
-<p>It is the responsibility of your open data group to collect and publish data in a way that protects privacy, prevents misuse and misinterpretation, and builds community trust. While data can be a powerful tool for understanding the impact and efficiency of the many functions of a university, making university data public can pose <a href="https://docs.google.com/document/d/15hiM6Hl8I116pgg1Qw7fmKQk4qTE0rwsfh7ikzxC07c/edit#bookmark=id.3qwtzof4lmab" target="_blank" rel="noopener">many risks</a>, such as revealing information about students, communities, and groups. For example, your group might publish a dataset of the racial distribution for each department over time, but if the dataset breaks down the university&rsquo;s Chemistry Department by Gender, Race, and Tenure status, you may be able to identify individuals in the dataset (DataSF 2).&nbsp;</p>
-<h1>Opening Data Responsibly</h1>
-<p>Through a holistic approach, an open data group must publish data responsibly. Below are some questions to consider. Skip to the <a href="https://docs.google.com/document/d/15hiM6Hl8I116pgg1Qw7fmKQk4qTE0rwsfh7ikzxC07c/edit#bookmark=id.wib7q6aseyan" target="_blank" rel="noopener">&lsquo;Data Governance Protocol&rsquo;</a> section for a comprehensive breakdown.</p>
-<ul>
-<li>What is the benefit of publishing a dataset?</li>
-<li>What metadata should be collected?</li>
-<li>What are the risks associated with the dataset - both at the individual and group level?</li>
-<li>Can any of the risks be mitigated through de-identification?</li>
-<li>How do we assess the impact of a dataset after publication?</li>
-</ul>
-<h1>Roles and Responsibilities</h1>
-<p>An open data group can consider themselves as the &lsquo;gatekeepers&rsquo; of the open data portal. We believe that no one person should have this important responsibility; rather the entire group should work with the administration to create effective and ethical data governance. Having a diverse team is critical to data governance - people with different backgrounds contribute different and important perspectives on the harms and benefits of a dataset.&nbsp;</p>
-<h1>Pre-Publishing</h1>
-<h2>Dataset Collection</h2>
-<p>Responsible data governance starts at dataset acquisition. After all, an open data portal team must collect the necessary information to (1) assess and contextualize the dataset properly, and (2) present the dataset with the appropriate context and description. Although there are different channels to acquire datasets, we have created a standardized approach to this important step in the process. Below are important fields to have when creating a &lsquo;Dataset Upload&rsquo; form.</p>
-<ul>
-<li>Dataset (.csv, hyperlink, .pdf)</li>
-<li>Dataset Name (String)</li>
-<li>Email of uploader, Note: this won&rsquo;t be made public, just for internal records (String)</li>
-<li>Publish Date (JS Date Object)</li>
-<li>Source (String)</li>
-<li>Link to the raw data source (hyperlink, .pdf)</li>
-<li>Category Tag (Drop-down menu, string)</li>
-<li>Data Type Tag (Drop-down menu, string)</li>
-<li>Description</li>
-<ul>
-<li>Provide a 1-2 sentence high-level description of the dataset.</li>
-<li>Define any key terms mentioned in the dataset.</li>
-<li>Who is the primary audience?</li>
-<li>What is the purpose of the dataset and why does it exist?</li>
-<li>Who does this data belong to, and have they given permission to share the data?</li>
-<li>What kind of decisions are being made with the dataset (currently and in the future)?</li>
-<li>Who can provide context around the dataset and answer questions about how it was collected, the steps taken to process it, and how to interpret the variables?</li>
-<li>Where has this dataset been used before?</li>
-<li>Is there anything else you would like to share about this dataset, such as privacy considerations or quality concerns?</li>
-</ul>
-</ul>
-<h2>Dataset Assessment</h2>
-<p>Posting a dataset on your portal gives it an appearance of statistical legitimacy to the public, so your open data group should assess the quality of a dataset before posting. A dataset may only capture a part of the true data, the data collection may be biased, and it can be difficult to assess this bias using a single dataset. For example, if deciding whether to publish a dataset about sexual violence, it would important to note that sexual assault data is historically under-documented on college campuses. We discuss an approach to approximating data quality in the <a href="https://docs.google.com/document/d/15hiM6Hl8I116pgg1Qw7fmKQk4qTE0rwsfh7ikzxC07c/edit#bookmark=id.wib7q6aseyan" target="_blank" rel="noopener">&lsquo;Data Governance Protocol&rsquo;</a> section.</p>
-<p>Next, you must holistically evaluate the utility and risks of publishing the dataset. Teams may not understand all the factors at play so we recommend opening constructive channels for dialogue with the administration and/or uploader of the data.</p>
-<p>First, the group must assess the benefits of publishing the dataset. While individual datasets can serve specific purposes, publishing datasets more broadly can achieve important goals for universities such as increasing student trust in the administration, inspiring new products and ideas, simplifying data requests, and enabling data sharing across the administration.</p>
-<ul>
-<li>Take a look at the <a href="https://docs.google.com/document/d/15hiM6Hl8I116pgg1Qw7fmKQk4qTE0rwsfh7ikzxC07c/edit#bookmark=id.74ps2tdnxvf2" target="_blank" rel="noopener">&lsquo;Community Impact&rsquo;</a> and <a href="https://docs.google.com/document/d/15hiM6Hl8I116pgg1Qw7fmKQk4qTE0rwsfh7ikzxC07c/edit#bookmark=id.x3yp6n5buho4" target="_blank" rel="noopener">&lsquo;Generate Buy-in and Demand&rsquo;</a> sections for discussions on the benefits of open data.&nbsp;</li>
-<li>Skip to the <a href="https://docs.google.com/document/d/15hiM6Hl8I116pgg1Qw7fmKQk4qTE0rwsfh7ikzxC07c/edit#bookmark=id.wib7q6aseyan" target="_blank" rel="noopener">&lsquo;Data Governance Protocol&rsquo;</a> section for a set of questions that can frame and quantify the perceived utility.</li>
-</ul>
-<p>Second, the group must assess the risk of publishing the dataset. Risks often include privacy concerns, potential misuse and misrepresentation of data, bias, and consent to name a few. It is important to remember that &ldquo;risk can be managed, but will not be zero&rdquo; (Open Data Release Toolkit). Below are some risks to think about and, again, skip to the <a href="https://docs.google.com/document/d/15hiM6Hl8I116pgg1Qw7fmKQk4qTE0rwsfh7ikzxC07c/edit#bookmark=id.wib7q6aseyan" target="_blank" rel="noopener">&lsquo;Data Governance Protocol&rsquo;</a> section for a set of questions that can frame and quantify the perceived risks.</p>
-<p><span style="font-weight: bold;">Consent:</span> Consent is a bedrock principle of data collection and analysis. In general, before adding a dataset to your portal, you should:</p>
-<ul>
-<li>Obtain consent for the collection of data, or ensure that consent was obtained before its collection</li>
-<li>Obtain consent for how the data will be used</li>
-</ul>
-<p><span style="font-weight: bold;">Privacy: </span>Personal information can be discovered through datasets if publicized. It is important to work with the administration to create guidelines that maintain anonymity. Here, we adopt <a href="https://dash.harvard.edu/bitstream/handle/1/30340010/OpenDataPrivacy.pdf?sequence=5&amp;isAllowed=y" target="_blank" rel="noopener">recommendations</a> from Harvard&rsquo;s Berkman Klein Center for Internet &amp; Society:</p>
-<ul>
-<li>Conduct risk-benefit analyses to inform which, and how, datasets are published</li>
-<li>Consider privacy at each stage of the data lifecycle</li>
-<li>Develop operational structures and processes that codify privacy management widely</li>
-<li>Emphasize campus engagement and campus priorities as essential aspects of data management</li>
-</ul>
-<p><span style="font-weight: bold;">Intentional Misuse: </span>With public data, malignant actors may try to use data in nefarious ways. To prevent this, some strategies include:</p>
-<ul>
-<li>Identify vulnerable datasets, including datasets that are composed of individual-level information</li>
-<li>Specify misuse cases, including examples that may break the law or university policy</li>
-<li>Conduct due diligence to see if any other data exists that could deanonymize users &mdash; removing personally identifiable information is often not enough!</li>
-</ul>
-<p><span style="font-weight: bold;">Unintentional Misuse: </span>Many individuals who are interested in this data may have limited experience working with data. As a result, even with the best of intentions, data may be misconstrued or used harmfully.</p>
-<ul>
-<li>Present the data without personally identifiable information</li>
-<li>Consider adding minor obstacles to access sensitive data &mdash; logins, access requests, and data ethics training are possible options for a healthier balance between benefits and risks.</li>
-</ul>
-<p><span style="font-weight: bold;">Misrepresentation: </span>It&rsquo;s easy to misrepresent your datasets. As popularized by Mark Twain, &ldquo;There are three kinds of lies: lies, damned lies, and statistics.&rdquo; Here are a few strategies to reduce these errors:</p>
-<ul>
-<li>Describe datasets clearly! Explain who collected the information, when it was collected, and how they did it.</li>
-<li>Clarify confusing entries in a dataset (e.g. outliers) by providing context if it exists</li>
-<li>Clarify confusing variables by providing definitions and example interpretations&nbsp;</li>
-<li>If there are sanity checks embedded (e.g. every row adds to a certain number), make sure to mention those.</li>
-<li>How did selection bias factor into the dataset? As the Human Rights Data Analysis Group <a href="https://hrdag.org/data-publication/" target="_blank" rel="noopener">puts it</a>, &ldquo;Data collected by what we can observe is what statisticians call a convenience sample, which is subject to selection bias.&rdquo; To help minimize this risk, make sure to specify where and why your sample may be unrepresentative. Also remember that data might be missing to conceal information, possibly with malicious intent.</li>
-</ul>
-<p><span style="font-weight: bold;">Bias and Equity: </span>Data may perpetuate inequities in society. Here are a few questions to think about:</p>
-<ul>
-<li>Who collected the data?</li>
-<li>Who was the data collected from? Were certain groups over- or under-represented?</li>
-<li>What questions were asked and how were they framed?&nbsp;</li>
-<li>Can this dataset be used to perpetuate dangerous stereotypes or decisions? For example, a dataset that shows grades based on race or gender should be treated very carefully.</li>
-</ul>
-<p>Third, the group must decide whether any of the risks can be mitigated through de-identification. De-identification refers to a collection of processes that prevent personal information from being revealed. However, the process may render a dataset useless for the public because de-identification could remove the context and meaning of a dataset. For most datasets, we recommend following <a href="https://docs.google.com/document/d/1_K59q9ik5eEw9_-iiPCbQ8WSlGk0FovNz1uLajVHoi0/edit" target="_blank" rel="noopener">Khaled El Emam&rsquo;s De-Identification Protocol for Open Data</a>, clearly labeled on pages 15 and 25 of DataSF&rsquo;s Open Data Release Toolkit. In some cases, it might be a good idea to consider other methods such as <a href="https://privacytools.seas.harvard.edu/differential-privacy" target="_blank" rel="noopener">differential privacy</a>.</p>
-<p>Lastly, use the risk and utility assessments to create an overall risk-utility score. We have put together a <a href="https://docs.google.com/document/d/15hiM6Hl8I116pgg1Qw7fmKQk4qTE0rwsfh7ikzxC07c/edit#bookmark=id.wib7q6aseyan" target="_blank" rel="noopener">data governance protocol</a> later in the guide.</p>
-<h1>Post-Publishing</h1>
-<p>In most cases, although an open data portal team can discuss the utility and risks of a dataset, the true impact of a dataset is not felt until after it has been published. As such, the open data group must:</p>
-<ul>
-<li>Have discussions with the resident expert/data steward about updating the dataset</li>
-<li>Maintain good relationships with all data stakeholders by having conversations with community members that could be impacted by the dataset. To paraphrase a popular slogan, &ldquo;No data about [a stakeholder] without [a stakeholder]&rdquo;</li>
-<li>Understand and document risks and utility after the dataset has been published and incorporate the knowledge into future data governance guidelines.</li>
-</ul>
-<h1>Data Governance Protocol</h1>
-<p>We have put together a step-by-step process for assessing a dataset. The protocol has been reviewed by the Northwestern Data Governance group. The framework serves as both a checklist and a conversation-starter. The open data group should work to mitigate the risks and amplify the benefits of releasing a dataset. In most cases, the protocol will be used for datasets that are not already public but it can definitely still be applied to existing public datasets. It would be best to have conversations with the university administration, especially in determining the risk score, because they will have valuable information that most students would not know about. A dataset may unilaterally be considered 'un-publishable' by the administration even if it passes the process. Lastly, remember the Data Governance Protocol is <span style="font-style: italic;">guidance</span>, not a hard-and-fast rule. The weights and questions are based on our own experiences, discussions amongst ourselves, and discussions with experts in the field. Feel free to adjust the weights and questions based on your group&rsquo;s and university&rsquo;s needs.</p>
-<p>Ask questions about what types of analysis are valid to conduct, the representativeness of the dataset, the completeness of the dataset, whether the dataset was the submitter&rsquo;s to share, etc. Meanwhile, we believe that administrative data should be more open to the public, as it is often the source by which university decisions are made; this makes it important for the public to be able to find biases and errors in the dataset. We have provided a simple matrix to determine if a dataset is okay to publish based on the source and sensitivity.&nbsp;</p>
-<ul>
-<li>Initial Utility Score: 0</li>
-<li>Utility</li>
-<ol>
-<li>Can it stimulate new ideas and services? (+ 1-3 based on possibilities)</li>
-<li>Additionally, is there a request for this dataset? (+1)</li>
-<ol>
-<li>Indicates demonstrated (+ additional) need</li>
-</ol>
-<li>Does this data exist right now online (maybe in a different format)? Does it have a purpose? (+1)</li>
-</ol>
-<li>Initial Risk Score: 0</li>
-<li>Risks&nbsp;</li>
-<ol>
-<li>What is an individual&rsquo;s expectation about the privacy of this information? (+/-1)</li>
-<li>Are marginalized communities affected on a personal level? (+1)</li>
-<li>Is personally-identifiable information easily revealed?&nbsp;</li>
-<ol>
-<li>Is there personally-identifiable information in the dataset that can&rsquo;t be removed? (+3)</li>
-<li>Is it possible to reveal personally-identifiable information even if the data is aggregated? (e.g. Does the degree of cross-tabulation reveal any personal information)? (+2)</li>
-<li>If yes to either 4.e.i. or 4.e.ii, could the revealed PII reasonably be harmful? (+5)</li>
-</ol>
-<li>Is the dataset of low quality? *These risks are especially pertinent to student-generated survey data</li>
-<ol>
-<li>Was the collection and cleaning process for the data likely to introduce misrepresentation? (+1-3 based on magnitude)</li>
-</ol>
-<li>Does the dataset have the potential to be misused?</li>
-<ol>
-<li>If personally-identifiable information were to be revealed, could it affect these individuals in a harmful way? (+5)</li>
-<li>Can the insights learned from the data affect individuals or groups in a harmful way? (+5)</li>
-</ol>
-<li>Is there a risk to the dataset being machine-readable? (+1)</li>
-<li>Any other risks/concerns that would harm your relationship with the administration? (+1-3 based on magnitude)</li>
-<li>Could this release reduce trust and/or harm future efforts at data collection? (+1)</li>
-<li>Mitigation</li>
-<ol>
-<li>Can any of the risks be mitigated through de-identification protocols?</li>
-<ol>
-<li>If yes, will de-identifying the dataset drastically reduce the context and meaning of the dataset? (+3)</li>
-<li>If no, (+ 1)</li>
-</ol>
-<li>Can any risks be mitigated through context or explanation of representation/bias?</li>
-</ol>
-</ol>
-<li>Overall Score</li>
-<ol>
-<li>Using scores for utility and mitigation place the dataset into the table below to determine whether to release:</li>
-<ol>
-<li>Green = definitely release</li>
-<li>Yellow = have a more in-depth discussion about the context around the dataset; consider adding protections to the data like an application process or further aggregation or subsetting. When possible, the publicly-hosted dataset should mention key reasons why additional care should be exercised with this data.</li>
-<li>Red = do not release</li>
-</ol>
-</ol>
-</ul>
+    <meta name="author" content="Stanford Open Data Project">
+    <meta name="author" content="Northwestern Open Data Initiative">
+    <title>Data Governance | Open Data Campus</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style-new.css">
+  </head>  
+  <body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark blue-nav" >
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.html">Open Data Campus</a>
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-</article>
-</body>
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Contents</a>
+          </li>
+          <li class="nav-item show-mobile">
+              <a class="nav-link" href="overview.html">Overview</a>
+          </li>
+          <li class="nav-item show-mobile">
+              <a class="nav-link" href="constructing.html">Constructing a Vision</a>
+          </li>
+          <li class="nav-item show-mobile">
+              <a class="nav-link" href="building.html">Building an Open Data Portal</a>
+          </li>
+          <li class="nav-item show-mobile">
+              <a class="nav-link" href="governance.html">Data Governance</a>
+          </li>
+          <li class="nav-item show-mobile">
+              <a class="nav-link" href="useful.html">Making Your Data Portal Useful</a>
+          </li>
+          <li class="nav-item show-mobile">
+              <a class="nav-link" href="case-studies.html">Case Studies</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="">Examples</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="hidden" style="margin: 0px; float: left; padding-top: 50px; max-width: 270px; position: fixed">
+        <ol>
+            <li class="counter">
+                <a class="inactive-li" href="overview.html">Overview</a>
+            </li>
+            <li class="counter"><a class="inactive-li" href="constructing.html">Constructing a Vision</a>
+            </li>
+            <li class="counter"><a class="inactive-li" href="building.html">Building a Data Portal</a></li>
+            <li class="counter"><a href="governance.html">Data Governance</a>
+              <ol>
+                <li class="counter"><a class="active-li" href="#4.1">Principles</a></li>
+                <li class="counter"><a class="active-li" href="#4.2">Opening Data Responsibly</a></li>
+                <li class="counter"><a class="active-li" href="#4.3">Roles and Responsibilities</a></li>
+                <li class="counter"><a class="active-li" href="#4.4">Pre-Publishing</a>
+                  <ol>
+                    <li class="counter"><a class="active-li secondary" href="#4.4.1">Dataset Collection</a></li>
+                    <li class="counter"><a class="active-li secondary" href="#4.4.2">Dataset Assessment</a></li>
+                  </ol>
+                </li>
+                <li class="counter"><a class="active-li" href="#4.5">Post-Publishing</a></li>
+                <li class="counter"><a class="active-li" href="#4.6">Data Governance Protocol</a></li>
+              </ol>
+            </li>
+            <li class="counter"><a class="inactive-li" href="useful.html">Making Your Data Portal Useful</a></li>
+            <li class="counter"><a class="inactive-li" href="case-studies.html">Case Studies</a></li>
+        </ol>
+      </div>
+      <article>
+        <div class="heading">
+            <h1>Chapter 4: Data Governance</h1>
+            <h2>We provide a data governance protocol to determine which datasets are safe to release.</h2>
+        </div>
+        <section id="4.1">
+          <h3>Principles</h3>
+          <p>Data governance is an institutional framework that promotes accountable and ethical &ldquo;planning, oversight, and control over the management of data and the use of data and data-related sources&rdquo; (<a href="https://www.cio.com/article/3521011/what-is-data-governance-a-best-practices-framework-for-managing-data-assets.html" target="_blank" rel="noopener">DAMA</a>). 
+            <mark>Simply put, strong data governance fosters accountability and ethics in management and use of data</mark>. It establishes mutual trust within the community your open data portal serves, and mitigates potential harms to individuals and populations.</p>
+          <p>
+            <div class="keyidea-container">
+              <p class="keyidea">KEY IDEA</p>
+              It is the responsibility of your open data group to collect and publish data in a way that protects privacy, prevents misuse and misinterpretation, and builds community trust.
+            </div>
+            While data can be a powerful tool for understanding the impact and efficiency of the many functions of a university, making university data public can pose <a href="https://docs.google.com/document/d/15hiM6Hl8I116pgg1Qw7fmKQk4qTE0rwsfh7ikzxC07c/edit#bookmark=id.3qwtzof4lmab" target="_blank" rel="noopener">many risks</a>, such as revealing information about students, communities, and groups. For example, your group might publish a dataset of the racial distribution for each department over time, but if the dataset breaks down the university&rsquo;s Chemistry Department by Gender, Race, and Tenure status, you may be able to identify individuals in the dataset (DataSF 2).&nbsp;</p>
+        </section>
+        <section id="4.2">
+          <h3>Opening Data Responsibly</h3>
+          <p>Through a holistic approach, an open data group must publish data responsibly. Below are some questions to consider. Skip to the <a href="#4.6" target="_blank" rel="noopener">Data Governance Protocol</a> section for a comprehensive breakdown.</p>
+          <ul>
+            <li>What is the benefit of publishing a dataset?</li>
+            <li>What metadata should be collected?</li>
+            <li>What are the risks associated with the dataset - both at the individual and group level?</li>
+            <li>Can any of the risks be mitigated through de-identification?</li>
+            <li>How do we assess the impact of a dataset after publication?</li>
+            </ul>
+        </section>
+        <section id="4.3">
+          <h3>Roles and Responsibilities</h3>
+          <p>An open data group can consider themselves as the &lsquo;gatekeepers&rsquo; of the open data portal. We believe that no one person should have this important responsibility; rather the entire group should work with the administration to create effective and ethical data governance. Having a diverse team is critical to data governance – people with different backgrounds contribute different and important perspectives on the harms and benefits of a dataset.&nbsp;</p>
+        </section>
+        <section id="4.4">
+          <h3>Pre-Publishing</h3>
+          <section id="4.4.1">
+            <h4>Dataset Collection</h4>
+            <p>Responsible data governance starts at dataset acquisition. After all, an open data portal team must collect the necessary information to (1) assess and contextualize the dataset properly, and (2) present the dataset with the appropriate context and description. Although there are different channels to acquire datasets, we have created a standardized approach to this important step in the process. Below are important fields to have when creating a &lsquo;Dataset Upload&rsquo; form.</p>
+            <div class="accordion-container">
+              <button class="accordion">Key Fields in Dataset Collection</button>
+                  <div class="panel">
+                    <p>
+                    <ul>
+                    <li>Dataset (.csv, hyperlink, .pdf)</li>
+                    <li>Dataset Name (String)</li>
+                    <li>Email of uploader, Note: this won&rsquo;t be made public, just for internal records (String)</li>
+                    <li>Publish Date (JS Date Object)</li>
+                    <li>Source (String)</li>
+                    <li>Link to the raw data source (hyperlink, .pdf)</li>
+                    <li>Category Tag (Drop-down menu, string)</li>
+                    <li>Data Type Tag (Drop-down menu, string)</li>
+                    <li>Description</li>
+                    <ul>
+                    <li>Provide a 1-2 sentence high-level description of the dataset.</li>
+                    <li>Define any key terms mentioned in the dataset.</li>
+                    <li>Who is the primary audience?</li>
+                    <li>What is the purpose of the dataset and why does it exist?</li>
+                    <li>Who does this data belong to, and have they given permission to share the data?</li>
+                    <li>What kind of decisions are being made with the dataset (currently and in the future)?</li>
+                    <li>Who can provide context around the dataset and answer questions about how it was collected, the steps taken to process it, and how to interpret the variables?</li>
+                    <li>Where has this dataset been used before?</li>
+                    <li>Is there anything else you would like to share about this dataset, such as privacy considerations or quality concerns?</li>
+                    </ul>
+                    </ul>
+                  </p>
+                  </div>
+                </div>
+          </section>
+          <section id="4.4.2">
+            <h4>Dataset Assessment</h4>
+            <p>Posting a dataset on your portal gives it an appearance of statistical legitimacy to the public, so your open data group should assess the quality of a dataset before posting. A dataset may only capture a part of the true data, the data collection may be biased, and it can be difficult to assess this bias using a single dataset. For example, if deciding whether to publish a dataset about sexual violence, it would important to note that sexual assault data is historically under-documented on college campuses. We discuss an approach to approximating data quality in the <a href="https://docs.google.com/document/d/15hiM6Hl8I116pgg1Qw7fmKQk4qTE0rwsfh7ikzxC07c/edit#bookmark=id.wib7q6aseyan" target="_blank" rel="noopener">&lsquo;Data Governance Protocol&rsquo;</a> section.</p>
+            <p>Next, you must holistically evaluate the utility and risks of publishing the dataset. Teams may not understand all the factors at play so we recommend opening constructive channels for dialogue with the administration and/or uploader of the data.</p>
+            <p>First, the group must assess the benefits of publishing the dataset. While individual datasets can serve specific purposes, publishing datasets more broadly can achieve important goals for universities such as increasing student trust in the administration, inspiring new products and ideas, simplifying data requests, and enabling data sharing across the administration.</p>
+            <ul>
+            <li>Take a look at the <a href="https://docs.google.com/document/d/15hiM6Hl8I116pgg1Qw7fmKQk4qTE0rwsfh7ikzxC07c/edit#bookmark=id.74ps2tdnxvf2" target="_blank" rel="noopener">&lsquo;Community Impact&rsquo;</a> and <a href="https://docs.google.com/document/d/15hiM6Hl8I116pgg1Qw7fmKQk4qTE0rwsfh7ikzxC07c/edit#bookmark=id.x3yp6n5buho4" target="_blank" rel="noopener">&lsquo;Generate Buy-in and Demand&rsquo;</a> sections for discussions on the benefits of open data.&nbsp;</li>
+            <li>Skip to the <a href="https://docs.google.com/document/d/15hiM6Hl8I116pgg1Qw7fmKQk4qTE0rwsfh7ikzxC07c/edit#bookmark=id.wib7q6aseyan" target="_blank" rel="noopener">&lsquo;Data Governance Protocol&rsquo;</a> section for a set of questions that can frame and quantify the perceived utility.</li>
+            </ul>
+            <p>Second, the group must assess the risk of publishing the dataset. Risks often include privacy concerns, potential misuse and misrepresentation of data, bias, and consent to name a few. It is important to remember that &ldquo;risk can be managed, but will not be zero&rdquo; (Open Data Release Toolkit). Below are some risks to think about and, again, skip to the <a href="https://docs.google.com/document/d/15hiM6Hl8I116pgg1Qw7fmKQk4qTE0rwsfh7ikzxC07c/edit#bookmark=id.wib7q6aseyan" target="_blank" rel="noopener">&lsquo;Data Governance Protocol&rsquo;</a> section for a set of questions that can frame and quantify the perceived risks.</p>
+            <div class="accordion-container">
+              <button class="accordion">Consent</button>
+              <div class="panel">
+                <p>Consent is a bedrock principle of data collection and analysis. In general, before adding a dataset to your portal, you should:</p>
+                <ul>
+                <li>Obtain consent for the collection of data, or ensure that consent was obtained before its collection</li>
+                <li>Obtain consent for how the data will be used</li>
+                </ul>
+              </div>
+              <button class="accordion">Privacy</button>
+              <div class="panel">
+                <p>Personal information can be discovered through datasets if publicized. It is important to work with the administration to create guidelines that maintain anonymity. Here, we adopt <a href="https://dash.harvard.edu/bitstream/handle/1/30340010/OpenDataPrivacy.pdf?sequence=5&amp;isAllowed=y" target="_blank" rel="noopener">recommendations</a> from Harvard&rsquo;s Berkman Klein Center for Internet &amp; Society:</p>
+                <ul>
+                <li>Conduct risk-benefit analyses to inform which, and how, datasets are published</li>
+                <li>Consider privacy at each stage of the data lifecycle</li>
+                <li>Develop operational structures and processes that codify privacy management widely</li>
+                <li>Emphasize campus engagement and campus priorities as essential aspects of data management</li>
+                </ul>
+              </div>
+
+              <button class="accordion">Intentional Misuse</button>
+              <div class="panel">
+              <p>With public data, malignant actors may try to use data in nefarious ways. To prevent this, some strategies include:</p>
+              <ul>
+              <li>Identify vulnerable datasets, including datasets that are composed of individual-level information</li>
+              <li>Specify misuse cases, including examples that may break the law or university policy</li>
+              <li>Conduct due diligence to see if any other data exists that could deanonymize users &mdash; removing personally identifiable information is often not enough!</li>
+              </ul>
+              </div>
+
+              <button class="accordion">Unintentional Misuse</button>
+              <div class="panel">
+              <p>Many individuals who are interested in this data may have limited experience working with data. As a result, even with the best of intentions, data may be misconstrued or used harmfully.</p>
+              <ul>
+              <li>Present the data without personally identifiable information</li>
+              <li>Consider adding minor obstacles to access sensitive data &mdash; logins, access requests, and data ethics training are possible options for a healthier balance between benefits and risks.</li>
+              </ul>
+              </div>
+
+              <button class="accordion">Misrepresentation</button>
+              <div class="panel">
+              <p>It&rsquo;s easy to misrepresent your datasets. As popularized by Mark Twain, &ldquo;There are three kinds of lies: lies, damned lies, and statistics.&rdquo; Here are a few strategies to reduce these errors:</p>
+              <ul>
+              <li>Describe datasets clearly! Explain who collected the information, when it was collected, and how they did it.</li>
+              <li>Clarify confusing entries in a dataset (e.g. outliers) by providing context if it exists</li>
+              <li>Clarify confusing variables by providing definitions and example interpretations&nbsp;</li>
+              <li>If there are sanity checks embedded (e.g. every row adds to a certain number), make sure to mention those.</li>
+              <li>How did selection bias factor into the dataset? As the Human Rights Data Analysis Group <a href="https://hrdag.org/data-publication/" target="_blank" rel="noopener">puts it</a>, &ldquo;Data collected by what we can observe is what statisticians call a convenience sample, which is subject to selection bias.&rdquo; To help minimize this risk, make sure to specify where and why your sample may be unrepresentative. Also remember that data might be missing to conceal information, possibly with malicious intent.</li>
+              </ul>
+              </div>
+
+              <button class="accordion">Bias and Equity</button>
+              <div class="panel">
+              <p>Data may perpetuate inequities in society. Here are a few questions to think about:</p>
+              <ul>
+              <li>Who collected the data?</li>
+              <li>Who was the data collected from? Were certain groups over- or under-represented?</li>
+              <li>What questions were asked and how were they framed?&nbsp;</li>
+              <li>Can this dataset be used to perpetuate dangerous stereotypes or decisions? For example, a dataset that shows grades based on race or gender should be treated very carefully.</li>
+              </ul>
+              </div>
+            </div>
+            <p>Third, the group must decide whether any of the risks can be mitigated through de-identification. De-identification refers to a collection of processes that prevent personal information from being revealed. However, the process may render a dataset useless for the public because de-identification could remove the context and meaning of a dataset. For most datasets, we recommend following <a href="https://docs.google.com/document/d/1_K59q9ik5eEw9_-iiPCbQ8WSlGk0FovNz1uLajVHoi0/edit" target="_blank" rel="noopener">Khaled El Emam&rsquo;s De-Identification Protocol for Open Data</a>, clearly labeled on pages 15 and 25 of DataSF&rsquo;s Open Data Release Toolkit. In some cases, it might be a good idea to consider other methods such as <a href="https://privacytools.seas.harvard.edu/differential-privacy" target="_blank" rel="noopener">differential privacy</a>.</p>
+            <p>Lastly, use the risk and utility assessments to create an overall risk-utility score. We have put together a <a href="#" target="_blank" rel="noopener">data governance protocol</a> later in the guide.</p>
+          </section>
+        </section>
+        <section id="4.5">
+          <h3>Post-Publishing</h3>
+          <p>In most cases, although an open data portal team can discuss the utility and risks of a dataset, the true impact of a dataset is not felt until after it has been published. As such, the open data group must:</p>
+          <ul>
+          <li>Have discussions with the resident expert/data steward about updating the dataset</li>
+          <li>Maintain good relationships with all data stakeholders by having conversations with community members that could be impacted by the dataset. To paraphrase a popular slogan, &ldquo;No data about [a stakeholder] without [a stakeholder]&rdquo;</li>
+          <li>Understand and document risks and utility after the dataset has been published and incorporate the knowledge into future data governance guidelines.</li>
+          </ul>
+        </section>
+        <section id="4.6">
+          <h3>Data Governance Protocol</h3>
+          <p>We have put together a step-by-step process for assessing a dataset. The protocol has been reviewed by the Northwestern Data Governance group. The framework serves as both a checklist and a conversation-starter. The open data group should work to mitigate the risks and amplify the benefits of releasing a dataset. In most cases, the protocol will be used for datasets that are not already public but it can definitely still be applied to existing public datasets. It would be best to have conversations with the university administration, especially in determining the risk score, because they will have valuable information that most students would not know about. A dataset may unilaterally be considered 'un-publishable' by the administration even if it passes the process. Lastly, remember the Data Governance Protocol is <span style="font-style: italic;">guidance</span>, not a hard-and-fast rule. The weights and questions are based on our own experiences, discussions amongst ourselves, and discussions with experts in the field. Feel free to adjust the weights and questions based on your group&rsquo;s and university&rsquo;s needs.</p>
+          <p>Ask questions about what types of analysis are valid to conduct, the representativeness of the dataset, the completeness of the dataset, whether the dataset was the submitter&rsquo;s to share, etc. Meanwhile, we believe that administrative data should be more open to the public, as it is often the source by which university decisions are made; this makes it important for the public to be able to find biases and errors in the dataset. We have provided a simple matrix to determine if a dataset is okay to publish based on the source and sensitivity.&nbsp;</p>
+        </section>
+        <a href="building.html" style="float: left" class="button-secondary">Previous</a>
+        <a href="useful.html" style="float: right" class="button">Next</a>
+      </article>
+    </main>
+    <!--SCRIPTING-->
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
 </html>

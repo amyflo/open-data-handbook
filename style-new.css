@@ -3,7 +3,7 @@ html{
 }
 body{
     color: #585858;
-    animation: fadeInAnimation ease 1s;
+    animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1; 
     animation-fill-mode: forwards; 
 }
@@ -207,6 +207,10 @@ ol {
 .active-li{
     color: #75acff;
     font-weight: 300;
+}
+.secondary{
+    font-weight: 200;
+    font-size: 0.9em;
 }
 .inactive-li:hover{
  color: #282828;
