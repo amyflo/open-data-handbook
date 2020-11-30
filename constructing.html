@@ -1,124 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="generator" content="pandoc">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <meta name="author" content="Solon Barocas">
-  <meta name="author" content="Moritz Hardt">
-  <meta name="author" content="Arvind Narayanan">
-  <title>Constructing a Vision</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
-    var mathElements = document.getElementsByClassName("math");
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") { katex.render(texText.data, mathElements[i], { displayMode: mathElements[i].classList.contains("display"), throwOnError: false } );
-    }}});</script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css" />
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
-</head>
-<body>
-<article>
-<header>
-<div id="chapter">Chapter 2</div>
-<h1 class="title">Constructing a Vision</h1>
-</header>
-<nav id="TOC">
-<div id="menuToggle">
-<a class="toggle" tabindex="0" ><img src="assets/hamburger_icon.svg" alt="hamburger" id="hamburger"></a>
-<a id="index" href="index.html"><img src="assets/home.png" alt="home" id="home"></a>
-<ul>
-<li><a href="#community-impact">Community Impact</a></li>
-<li><a href="#mission-statement">Mission Statement</a></li>
-<li><a href="#team">Team</a></li>
-<li><a href="#motivating-the-team">Motivating the Team</a></li>
-<li><a href="#lessons-from-other-initiatives">Lessons from Other Initiatives</a></li>
-<li><a href="#finding-a-faculty-advisor">Finding a Faculty Advisor</a></li>
-<li><a href="#key-data-sources">Key Data Sources</a></li>
-<li><a href="#slide-deck">Slide Deck</a></li>
-</ul>
-</div>
-</nav>
-<section id="community-impact" class="level1">
-<h1>Community Impact</h1>
-<p>This section discusses some strategies to identify the community impact, both the benefits and risks, of an open data portal.</p>
-<p>We have found that many universities&rsquo; data ecosystems are complicated to navigate &mdash; datasets are hard to find and there is a lack of knowledge as to which datasets even exist. In addition, most of these datasets only exist in a PDF format, which disincentivizes and, to some extent, prevents curious community members from analyzing or visualizing the data. For example, every year US universities publish a Common Dataset in line with federal law with data on enrollment, student characteristics, finances, and more. The yearly nature of this data makes it prime for historical analysis &mdash; but the fact that the data is in PDF format and isn&rsquo;t connected to previous years makes it difficult for community members to embark on an analysis.</p>
-<p>Here are several key stakeholders who would benefit from easier access to university data:&nbsp;</p>
-<ul>
-<li><span style="font-weight: bold;">Students:</span> Open data can aid journalistic efforts; improve understanding of the community; and fuel projects for journalists, civic-minded students, student-body leaders, student groups, and more.</li>
-<ul>
-<li>At Northwestern University, a group of students used datasets on Northwestern University Police field stops, case distribution, and traffic stops found on the Northwestern Open Data Initiative to <a href="https://medium.com/@rshuks/a-data-driven-investigation-into-the-northwestern-police-department-62eeaa9efe3a" target="_blank" rel="noopener">document</a> anti-Blackness in the Northwestern University Police Department.</li>
-</ul>
-<li><span style="font-weight: bold;">Faculty, Staff, and Researchers:</span> Open data can help with targeted campus improvements and aid ongoing projects.</li>
-<ul>
-<li>The Stanford Open Data Portal assembled and hosted a regularly updated COVID-19 dataset with case counts, deaths, and other relevant statistics from 12 Bay Area counties. The dataset was used by researchers throughout the Bay Area who were analyzing the virus&rsquo;s spread.</li>
-</ul>
-<li><span style="font-weight: bold;">Classes and Clubs:</span> Open data can be integrated into design, engineering, and analytics classes/clubs to promote data literacy among the student body.</li>
-<ul>
-<li>The Stanford Open Data Portal worked with the student government and campus newspaper to administer the Stanford Community Survey, which included questions related to socioeconomic status. It is in the process of being opened.</li>
-</ul>
-</ul>
-<p>When used appropriately, open data can help empower members of marginalized communities, providing more tools to demonstrate how campus organizations directly or indirectly harm marginalized communities. To do this successfully, it is important to include a broad and diverse set of communities in the need-finding and data governance processes to make better decisions about which datasets to prioritize acquiring, as well as how to work with the data. Additionally, proactive attention on empowering marginalized communities will help you identify datasets that <span style="font-style: italic;">should</span> exist, and set you up to work with the relevant entities to locate, obtain, or create these datasets.&nbsp;</p>
-<p>Finally, in building the product, identify a targeted set of potential users. Ideally, they will be invested in the final product and can contribute to the development of ideas, user feedback, and testing. When building a community-facing product, it is important to involve potential users in the development process.</p>
-<p>Open data can be powerful, but it also comes with risks. Refer to the <a href="https://docs.google.com/document/d/15hiM6Hl8I116pgg1Qw7fmKQk4qTE0rwsfh7ikzxC07c/edit#bookmark=id.3qwtzof4lmab" target="_blank" rel="noopener">Data Governance</a> section for a comprehensive breakdown of challenges and how to mitigate them.</p>
-</section>
-<section id="mission-statement" class="level1">
-<h1>Mission Statement</h1>
-<p>Having an organizational mission statement is useful to align high-level goals, promote an organizational culture, and portray external legitimacy. Here are some goals to consider:</p>
-<ol>
-<li><span style="font-weight: bold;">Transparency:</span> University operations should be broadly accessible for the campus community it serves.</li>
-<li><span style="font-weight: bold;">Engagement:</span> Members of the campus should be empowered with information to be involved in the broader campus community.</li>
-<li><span style="font-weight: bold;">Accountability:</span> Open data can ensure accountability from universities to act in the best interests of their community members.</li>
-<li><span style="font-weight: bold;">Build:</span> Open data organizations provide valuable experience to their members in building useful public-facing tools.</li>
-<li><span style="font-weight: bold;">Educate:</span> Open data organizations can benefit their members and the broader community <span style="font-style: italic;">educationally</span> by increasing data-related skillsets and awareness for builders and the broader community.</li>
-</ol>
-  </section>
-<section id="team" class="level1">
-<h1>Team</h1>
-<p>Given the understanding that finding <span style="font-style: italic;">any</span> peers with the time and motivation to take on a new project is a difficult task, here are some rough guidelines on expertise and considerations that we found useful. We expect individuals to fill multiple roles at the start of the project.</p>
-<p><span style="font-weight: bold;">Important skills to seek out:</span></p>
-<ul>
-<li><span style="font-weight: bold;">Product:</span> Motivated by understanding the community&rsquo;s open data needs, creating the vision, and shaping the team&rsquo;s work to align with these high-level goals.</li>
-<li><span style="font-weight: bold;">Backend:</span> Building out the infrastructure for hosting and managing data is essential for success.</li>
-<li><span style="font-weight: bold;">Frontend:</span> The representation of data on your portal is the difference between &ldquo;open data&rdquo; and &ldquo;available data.&rdquo;</li>
-<li><span style="font-weight: bold;">Outreach:</span> A technical platform is useless without the data to showcase. Work within members of your community to gain access to that data, and maintain those relationships.</li>
-</ul>
-<ul>
-<li><span style="font-weight: bold;">Data Governance:</span> It is important to understand the data landscape and foster relationships with key members in the university&rsquo;s data governance structure.</li>
-<li><span style="font-weight: bold;">User Experience:</span> A major downfall for many existing data portals is the complexity in their interfaces. Working with users and catering the experience to real applications of your platform allows your data to become accessible.</li>
-<li><span style="font-weight: bold;">Journalism / Data Visualization:</span> Beyond the data itself, analysis is a strong component of your platform. Keeping these users in mind will continue to advise your structural decisions.</li>
-<li><span style="font-weight: bold;">Operations:</span> As you expand your team, keeping track of all of the moving parts will become increasingly difficult. It&rsquo;s worth having someone to help manage these growing pains.</li>
-</ul>
-<p>Finally, remember that you&rsquo;re working with data, organizations, and people that represent a diverse set of backgrounds. Building a team that represents the diversity of the student body (e.g. by race, gender, socioeconomic status, etc.) isn&rsquo;t just the right thing to do, but it also provides you with valuable perspectives from different parts of campus.&nbsp;</p></section>
-<section id="motivating-the-team" class="level1">
-<h1>Motivating the Team</h1>
-<p>Building a passionate, sustainable team isn&rsquo;t easy&mdash;think about how you&rsquo;ll keep everyone excited and engaged for the long haul. You may be motivated by the mission of opening data at your university, a desire to build a widely used product, or learning skills. Of course, many teammates will be encouraged, at least in part, by external motivators. These may include grades, academic credit, recognition, and resume items&mdash;and they&rsquo;re all valid reasons for undertaking a new endeavor in college.</p>
-<p>If you have students motivated by grades and academic credit, consider seeking to complete the project as part of an &ldquo;independent study.&rdquo; For students motivated by recognition and resume items, consider applying for an incubator program. Additionally, titles like &ldquo;Head of Product&rdquo; cost nothing to dole out and are perfect for a resume!</p>
-<p>Finally, these incentives often have the added benefit of imposing deadlines for the team. As a result, this provides another valuable motivation to help bring the project to fruition.&nbsp;</p></section>
-<section id="lessons-from-other-initiatives" class="level1">
-<h1>Lessons From Other Initiatives</h1>
-<p>The data ecosystem at your university can be complex. You should learn how faculty and student groups like your school newspaper currently access, store, and analyze data.&nbsp;</p>
-<p>In addition to understanding the landscape at your own school, utilize what has already been done in order to showcase the capabilities of university open data portals (<a href="https://docs.google.com/document/d/15hiM6Hl8I116pgg1Qw7fmKQk4qTE0rwsfh7ikzxC07c/edit#heading=h.a7upes870117" target="_blank" rel="noopener">see case studies</a>). Not only will this go a long way to show the feasibility of your project, but it will also aid in demonstrating the positive impact an open data portal has brought in other university settings.</p></section>
-<section id="finding-a-faculty-advisor" class="level1">
-<h1>Finding a Faculty Advisor</h1>
-<p>Any project with faculty endorsement gains instant credibility with the administration that you will inevitably be in contact with. The more time you put into choosing the right faculty member and facilitating your relationship with them, the better you can leverage that relationship into propelling your project forward.</p>
-<p>The right faculty member should have a background in technology and advocate for public interest in technology. Beyond interest and experience, your faculty advisor&rsquo;s greatest asset will be their administrative network. Make sure that they at least have the time to make the right introductions for you and your team. Moreover, being able to <span style="font-style: italic;">show</span> your ability and drive to see this project through is an important factor in your ability to mobilize your faculty advisor.</p></section>
-<section id="key-data-sources" class="level1">
-<h1>Key Data Sources</h1>
-<p>An open data portal relies on aggregating large quantities of existing data that community members find useful. Obtaining such data requires partnerships with data stewards or owners on a university campus. It is important to identify and reach out to such stakeholders early in order to ensure wide usage of your portal. Examples of typical stakeholders include the institutional research office, campus newspaper, police department, office of alcohol policy, registrar&rsquo;s office, public health department, student government, campus housing, athletic department, admissions office, campus organizations, IT office, libraries, and data governance office.</p>
-<p>To successfully collect datasets, you should be prepared to answer questions about your data portal such as use cases, risk mitigation, and data governance. Your level of data access can vary depending on the source; some may already have infrastructure in place to access their data while others may need you to aggregate the data on your own.&nbsp;</p></section>
-<section id="slide-deck" class="level1">
-<h1>Slide Deck</h1>
-<p>Prepare a slide deck that explains the aspects of your vision discussed in this section. Remember your target audience, which can include administration, other data partners, funding sources, and new recruits. As such, it would help to have either modular slide decks or multiple versions.</p>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="pandoc">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="author" content="Stanford Open Data Project">
+    <meta name="author" content="Northwestern Open Data Initiative">
+    <title>Open Data Handbook for College Students</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style-new.css">
+  </head>  
+    
+  <body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark blue-nav" >
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">Open Data Campus</a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Contents</a>
+            </li>
+            <li class="nav-item show-mobile">
+                <a class="nav-link" href="overview.html">Overview</a>
+            </li>
+            <li class="nav-item show-mobile">
+                <a class="nav-link" href="constructing.html">Constructing a Vision</a>
+            </li>
+            <li class="nav-item show-mobile">
+                <a class="nav-link" href="building.html">Building an Open Data Portal</a>
+            </li>
+            <li class="nav-item show-mobile">
+                <a class="nav-link" href="governance.html">Data Governance</a>
+            </li>
+            <li class="nav-item show-mobile">
+                <a class="nav-link" href="useful.html">Making Your Data Portal Useful</a>
+            </li>
+            <li class="nav-item show-mobile">
+                <a class="nav-link" href="case-studies.html">Case Studies</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="">Examples</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Contact</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <main>
+      <div class="hidden" style="margin: 0px; float: left; padding-top: 50px; max-width: 270px; position: fixed">
+          <ol>
+              <li class="counter">
+                  <a class="inactive-li" href="overview.html">Overview</a>
+              </li>
+              <li class="counter"><a href="constructing.html">Constructing a Vision</a>
+                  <ol>
+                      <li class="counter"><a class="active-li" href="#2.1">Community Impact</a></li>
+                      <li class="counter"><a class="active-li" href="#2.2">Mission Statement</a></li>
+                      <li class="counter"><a class="active-li" href="#2.3">Team</a></li>
+                      <li class="counter"><a class="active-li" href="#2.4">Motivating the Team</a></li>
+                      <li class="counter"><a class="active-li" href="#2.5">Lessons from Other Initiatives</a></li>
+                      <li class="counter"><a class="active-li" href="#2.6">Finding a Faculty Advisor</a></li>
+                      <li class="counter"><a class="active-li" href="#2.7">Key Data Sources</a></li>
+                      <li class="counter"><a class="active-li" href="#2.8">Slide Deck</a></li>
+                  </ol>
+              </li>
+              <li class="counter"><a class="inactive-li" href="building.html">Building a Data Portal</a></li>
+              <li class="counter"><a class="inactive-li" href="governance.html">Data Governance</a></li>
+              <li class="counter"><a class="inactive-li" href="governance.html">Making Your Data Portal Useful</a></li>
+              <li class="counter"><a class="inactive-li" href="governance.html">Case Studies</a></li>
+          </ol>
+      </div>
+      <article>
+          <div class="heading">
+              <h1>Chapter 2: Constructing a Vision</h1>
+              <h2>We discuss how an open data portal can operate within the broader campus community, and how to start building a team to start the process.</h2>
+          </div>
+          <section id="2.1">
+              <h3><b>2.1</b> Community Impact</h3>
+              <p>This section discusses some strategies to identify the community impact, both the benefits and risks, of an open data portal.</p>
+              <p> We have found that many universities’ data ecosystems are complicated to navigate — <mark>datasets are hard to find and there is a lack of knowledge as to which datasets even exist.</mark> In addition, most of these datasets only exist in a PDF format, which disincentivizes and, to some extent, prevents curious community members from analyzing or visualizing the data. For example, every year US universities publish a Common Dataset in line with federal law with data on enrollment, student characteristics, finances, and more. The yearly nature of this data makes it prime for historical analysis — but the fact that the data is in PDF format and isn’t connected to previous years makes it difficult for community members to embark on an analysis.</p>    
+              <p><b>Here are several key stakeholders who would benefit from easier access to university data:</b></p> 
+              
+              <div class="accordion-container">
+                  <button class="accordion">Students</button>
+                  <div class="panel">
+                  <p>
+                  Open data can aid journalistic efforts; improve understanding of the community; and fuel projects for journalists, civic-minded students, student-body leaders, student groups, and more.
+                  </p>
 
-<div id="lastupdate">
-Last updated: Sun Sep 20 2020
-</div>
-</section>
-</article>
-</body>
+                  <p>
+                    At Northwestern University, a group of students used datasets on Northwestern University Police field stops, case distribution, and traffic stops found on the Northwestern Open Data Initiative to <a href="https://medium.com/@rshuks/a-data-driven-investigation-into-the-northwestern-police-department-62eeaa9efe3a">document anti-Blackness in the Northwestern University Police Department.</a>
+                  </p>
+                  </div>
+
+                  <button class="accordion">Faculty, Staff, and Researchers</button>
+                  <div class="panel">
+                  <p>Open data can help with targeted campus improvements and aid ongoing projects.
+                  </p>
+                  <p>
+                    The Stanford Open Data Portal assembled and hosted a regularly updated COVID-19 dataset with case counts, deaths, and other relevant statistics from 12 Bay Area counties. The dataset was used by researchers throughout the Bay Area who were analyzing the virus’s spread. 
+                  </p>
+                  </div>
+
+                  <button class="accordion">Classes and Clubs</button>
+                  <div class="panel">
+                  <p>Open data can be integrated into design, engineering, and analytics classes/clubs to promote data literacy among the student body.</p>
+                  <p>The Stanford Open Data Portal worked with the student government and campus newspaper to administer the Stanford Community Survey, which included questions related to socioeconomic status. 
+                    It is in the process of being opened.
+                  </p>                 
+                  </div>
+              </div>
+
+              <div class="keyidea-container">
+                  <p class="keyidea">KEY IDEA</p>
+                  When used appropriately, open data can help empower members of marginalized communities, providing more tools to demonstrate how campus organizations directly or indirectly harm marginalized communities.
+              </div>
+              <p>To do this successfully, it is important to include a broad and diverse set of communities in the need-finding and data governance processes to make better decisions about which datasets to prioritize acquiring, as well as how to work with the data. Additionally, proactive attention on empowering marginalized communities will help you identify datasets that should exist, and set you up to work with the relevant entities to locate, obtain, or create these datasets. 
+                <br><br>
+                Finally, in building the product, identify a targeted set of potential users. Ideally, they will be invested in the final product and can contribute to the development with ideas, user feedback, and testing. When building a community-facing product, it is important to involve potential users in the development process.
+                <br><br>
+                Open data can be powerful, but it also comes with risks. Refer to the <a href="governance.html">Data Governance</a> section for a comprehensive breakdown of challenges and how to mitigate them.
+                </p>
+          </section>
+          <section id="2.2">
+            <h3><b>2.2</b> Mission Statement</h3>
+           <p>
+            <mark>Having an organizational mission statement is useful to align high-level goals, promote an organizational culture, and portray external legitimacy.</mark>
+            <b>Here are some goals to consider:</b>
+            <ul>
+              <li>Transparency: University operations should be broadly accessible for the campus community it serves.</li>
+              <li>Engagement: Members of the campus should be empowered with information to be involved in the broader campus community.</li>
+              <li>Accountability: Open data can ensure accountability from universities to act in the best interests of their community members.</li>
+              <li>Build: Open data organizations provide valuable experience to their members in building useful public-facing tools.</li>
+              <li>Educate: Open data organizations can benefit their members and the broader community educationally by increasing data-related skill sets and awareness for builders and the broader community.</li>
+            </ul>
+           </p>
+          </section>
+          <section id="2.3">
+            <h3><b>2.3</b> Community Impact</h3>
+            Given the understanding that finding any peers with the time and motivation to take on a new project is a difficult task, here are some rough guidelines on expertise and considerations that we found useful. We expect individuals to fill multiple roles at the start of the project.
+            <b>Important skills to seek out:</b>
+            <br><br>
+            <ul>
+              <li>Product: Motivated by understanding the community’s open data needs, creating the vision, and shaping the team’s work to align with these high-level goals.</li>
+              <li>Backend: Building out the infrastructure for hosting and managing data is essential for success.</li>
+              <li>Frontend: The representation of data on your portal is the difference between “open data” and “available data.”</li>
+              <li>Outreach: A technical platform is useless without the data to showcase. Work within members of your community to gain access to that data, and maintain those relationships.</li>
+              <li>Data Governance: It is important to understand the data landscape and foster relationships with key members in the university’s data governance structure.</li>
+              <li>User Experience: A major downfall for many existing data portals is the complexity in their interfaces. Working with users and catering the experience to real applications of your platform allows your data to become accessible.</li>
+              <li>Journalism / Data Visualization: Beyond the data itself, analysis is a strong component of your platform. Keeping these users in mind will continue to advise your structural decisions.</li>
+              <li>Operations: As you expand your team, keeping track of all of the moving parts will become increasingly difficult. It’s worth having someone to help manage these growing pains.
+              </li>
+            </ul>
+            <b>Remember that you’re working with data, organizations, and people that represent a diverse set of backgrounds.</b>
+            <div class="keyidea-container">
+              <p class="keyidea">KEY IDEA</p>
+                Building a team that represents the diversity of the student body (e.g. by race, gender, socioeconomic status, etc.) isn’t just the right thing to do, but it also provides you with valuable perspectives from different parts of campus. 
+            </div>
+          </section>
+          <section id="2.4">
+            <h3><b>2.4</b> Motivating the Team</h3>
+            <p>Building a passionate, sustainable team isn’t easy—think about how you’ll keep everyone excited and engaged for the long haul. You may be motivated by the mission of opening data at your university, a desire to build a widely used product, or learning skills. Of course, many teammates will be encouraged, at least in part, by external motivators. These may include grades, academic credit, recognition, and resume items—and they’re all valid reasons for undertaking a new endeavor in college.<br><br>
+              If you have students motivated by grades and academic credit, consider seeking to complete the project as part of an “independent study.” For students motivated by recognition and resume items, consider applying for an incubator program. Additionally, titles like “Head of Product” cost nothing to dole out and are perfect for a resume!<br><br>
+              Finally, these incentives often have the added benefit of imposing deadlines for the team. As a result, this provides another valuable motivation to help bring the project to fruition. </p>
+          </section>
+          <section id="2.5">
+            <h3><b>2.5</b> Lessons from Other Initiatives</h3>
+            <p>
+              The data ecosystem at your university can be complex. You should learn how faculty and student groups like your school newspaper currently access, store, and analyze data. 
+              <br><br>
+              In addition to understanding the landscape at your own school, utilize what has already been done in order to showcase the capabilities of university open data portals (see case studies). Not only will this go a long way to show the feasibility of your project, but it will also aid in demonstrating the positive impact an open data portal has brought in other university settings.
+            </p>
+          </section>
+          <section id="2.6">
+            <h3><b>2.6</b> Finding a Faculty Advisor</h3>
+              <p>
+                Any project with faculty endorsement gains instant credibility with the administration that you will inevitably be in contact with. <mark>The more time you put into choosing the right faculty member and facilitating your relationship with them, the better you can leverage that relationship into propelling your project forward.</mark>
+                <br>
+                <div class="keyidea-container">
+                  <p class="keyidea">KEY IDEA</p>
+                  The right faculty member should have a background in technology and advocate for public interest in technology. Beyond interest and experience, your faculty advisor’s greatest asset will be their administrative network. 
+                </div>
+                Make sure that they at least have the time to make the right introductions for you and your team. Moreover, being able to show your ability and drive to see this project through is an important factor in your ability to mobilize your faculty advisor.
+              </p>
+          </section>
+          <section id="2.7">
+            <h3><b>2.7</b> Key Data Sources</h3>
+            <p>
+              An open data portal relies on aggregating large quantities of existing data that community members find useful. Obtaining such data requires partnerships with data stewards or owners on a university campus. It is important to identify and reach out to such stakeholders early in order to ensure wide usage of your portal. Examples of typical stakeholders include the institutional research office, campus newspaper, police department, office of alcohol policy, registrar’s office, public health department, student government, campus housing, athletic department, admissions office, campus organizations, IT office, libraries, and data governance office.
+              <br><br>
+              To successfully collect datasets, you should be prepared to answer questions about your data portal such as use cases, risk mitigation, and data governance. Your level of data access can vary depending on the source; some may already have infrastructure in place to access their data while others may need you to aggregate the data on your own. 
+            </p>
+          </section>
+          <section id="2.8">
+            <h3><b>2.8</b> Slide Deck</h3>
+            <p>
+              Prepare a slide deck that explains the aspects of your vision discussed in this section. Remember your target audience, which can include administration, other data partners, funding sources, and new recruits. As such, it would help to have either modular slide decks or multiple versions.
+            </p>
+          </section>
+          <a href="overview.html" style="float: left" class="button-secondary">Previous</a>
+          <a href="building.html" style="float: right" class="button">Next</a>
+      </article>
+    </main>
+    <!--SCRIPTING-->
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
 </html>
