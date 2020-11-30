@@ -1,224 +1,237 @@
 html{
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 body{
     color: #585858;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
 }
+  
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 
 .blue-nav{
-    background-color:#0066FF !important;
+	background-color: #0066FF !important;
 }
-
 main{
-    margin: 10px;
+	margin: 10px;
 }
 mark{
-    background-color: #FFEC89;
-    color: #505050;
+	background-color: #fef3bb;
+	color: #505050;
 }
-
 .keyidea-container{
-    font-size: 20px;
-    font-weight: 400;
-    line-height: normal;
-    background-color: #e8f1ff;
-    padding: 30px;
-    font-style: italic;
-    margin: 20px 0px;
-    border-radius: 5px;
-    transition: 0.3s;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: normal;
+	background-color: #e8f1ff;
+	padding: 30px;
+	font-style: italic;
+	margin: 20px 0px;
+	border-radius: 5px;
+	transition: 0.3s;
 }
-
 .keyidea-container:hover{
-    box-shadow: 5px 5px 5px #ededed60;
-    transition: 0.3s;
+	box-shadow: 5px 5px 5px #ededed60;
+	transition: 0.3s;
 }
-
 .keyidea{
-    font-weight: 600;
-    font-size: 16px;
-    color:#0066FF;
-    font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	color: #0066FF;
+	font-style: normal;
 }
 
 @media screen and (max-width: 600px){
-    h1{
-        font-size:10vw;
+	h1{
+	font-size: 10vw;
+	}
+	h2{
+	font-size: 7vw;
+	}
+	h3{
+	font-size: 6vw;
+	}
+	.hidden{
+	display: none;
+	width: 0%;
+	}
+	article{
+	margin: auto;
+	width: 100%;
+	}
+}
+@media screen and (min-width: 600px){
+	article{
+	margin: auto;
+	width: 100%;
     }
-    h2{
-        font-size:7vw;
-    }
-    h3{
-        font-size:6vw;
-    }
-    .hidden{
+    .show-mobile{
         display: none;
-        width:0%;
-    }
-    article{
-        margin: auto;
-        width: 100%;
-        padding-top: 40px;
-    }
+        }
 }
 
 @media screen and (max-width: 800px){
     .hidden{
         display: none;
     }
-    article{
-        margin: auto;
-        width: 100%;
-        padding-top: 40px;
-    }
+	article{
+	margin: auto;
+	width: 100%;
+ }
 }
-
-@media screen and (min-width: 600px){
-    .show-mobile{
-        display: none;
-    }
-}
-
 
 @media screen and (min-width: 800px){
-    article{
-        margin: auto;
-        width: 80%;
+	article{
         float: right;
-        padding: 80px;
+        margin: auto;
+        width: 70%;
+        padding: 0px 30px;
     }
 }
 
+@media screen and (min-width: 1241px){
+	article{
+        float: right;
+        margin: auto;
+        width: 80%;
+ }
+}
 
 
 h1{
-    font-size: 3em;
-    color:#282828;
+ font-size: 3em;
+ color: #282828;
 }
-
 b{
-    font-weight: 500;
+ font-weight: 600;
+ color: #505050;
 }
-
 h2{
-    color:#0066FF;
-    margin: 20px 0px;
+ color: #0066FF;
+ margin: 20px 0px;
 }
 h3{
-    margin: 20px 0px;
-    color:#282828;
+ margin: 20px 0px;
+ color: #282828;
 }
-
 .heading{
-    margin: 30px 0px;
+ margin: 30px 0px;
 }
 .accordion {
-    background-color: #bcd7ff;
-    cursor: pointer;
-    padding: 20px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-    border-radius: 5px
+ background-color: #bcd7ff;
+ cursor: pointer;
+ padding: 20px;
+ width: 100%;
+ border: none;
+ text-align: left;
+ outline: none;
+ font-size: 15px;
+ transition: 0.4s;
+ border-radius: 5px
 }
-
 .active, .accordion:hover {
-background-color: #90b9f7;
-box-shadow: 5px 5px 5px #ededed;
+ background-color: #90b9f7;
+ box-shadow: 5px 5px 5px #ededed;
 }
-
 .accordion:after {
-    content: '\002B';
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
+ content: '\002B';
+ font-weight: 700;
+ float: right;
+ margin-left: 5px;
 }
-
 .active:after {
-    content: "\2212";
+ content: "\2212";
 }
-
 .panel {
-    padding: 0px 20px;
-    margin-top: 10px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+ padding: 0px 20px;
+ margin-top: 10px;
+ background-color: #FFFFFF;
+ max-height: 0;
+ overflow: hidden;
+ transition: max-height 0.2s ease-out;
 }
-
 a {
-    text-decoration: none;
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 1px;
-    transition: background-size cubic-bezier(0,.5,0,1) 0.3s;
+ text-decoration: none;
+ background-image: linear-gradient(currentColor, currentColor);
+ background-position: 0% 100%;
+ background-repeat: no-repeat;
+ background-size: 0% 1px;
+ transition: background-size cubic-bezier(0,.5,0,1) 0.3s;
 }
-
 a:hover, a:focus {
-    text-decoration: none;
-    background-size: 100% 1px;
+ text-decoration: none;
+ background-size: 100% 1px;
 }
-
 .button {
-    background-color:#0066FF;
-    border: none;
-    color: white;
-    padding: 12px 18px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 5px;
-    background-image: none;
-    transition: 0.3s;
-    width: 100px;
+ background-color: #0066FF;
+ border: none;
+ color: #FFFFFF;
+ padding: 12px 18px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ border-radius: 5px;
+ background-image: none;
+ transition: 0.3s;
+ width: 100px;
 }
-
 .button:hover, focus {
-    background-color:#125ed0;
-    color: white;
-    box-shadow: 5px 5px 5px #ededed;
-    transition: 0.3s;
+ background-color: #125ed0;
+ color: #FFFFFF;
+ box-shadow: 5px 5px 5px #ededed;
+ transition: 0.3s;
 }
-
 .button-secondary {
-    background-color: white;
-    color:#0066FF;
-    padding: 12px 18px;
-    border-radius: 5px;
-    border: 2px solid #0066FF;
-    text-decoration: none;
-    background-image: none;
-    transition: 0.3s;
-    width: 100px;
+ background-color: #FFFFFF;
+ color: #0066FF;
+ padding: 12px 18px;
+ border-radius: 5px;
+ border: 2px solid #0066FF;
+ text-decoration: none;
+ background-image: none;
+ transition: 0.3s;
+ width: 100px;
 }
-
 .button-secondary:hover, focus {
-    background-color: #e8f1ff;
-    box-shadow: 5px 5px 5px #ededed;
-    transition: 0.3s;
+ background-color: #e8f1ff;
+ box-shadow: 5px 5px 5px #ededed;
+ transition: 0.3s;
+}
+ol {
+ counter-reset: section;
+ list-style-type: none;
+ margin-left:-30px;  
+ font-size: 0.9em;
 }
 
-ol {
-    counter-reset: section;
-    list-style-type: none;
-  }
-  
-  .counter::before {
-    counter-increment: section;
-    content: counters(section, ".") " ";
-    color: #0066FF;
-    font-weight: 500;
-  }
+.counter::before {
+ counter-increment: section;
+ content: counters(section, ".") " ";
+ color: #0066FF;
+ font-weight: 500;
+}
 
-  .inactive-li{
-    color: #585858;
+.inactive-li{
+ color: #585858;
+ font-weight: 300;
+}
+
+.active-li{
+    color: #75acff;
     font-weight: 300;
-  }
-
-  .inactive-li:hover{
-    color: #282828;
-  }
+}
+.secondary{
+    font-weight: 200;
+    font-size: 0.9em;
+}
+.inactive-li:hover{
+ color: #282828;
+}
+	

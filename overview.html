@@ -1,53 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="generator" content="pandoc">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <meta name="author" content="Solon Barocas">
-  <meta name="author" content="Moritz Hardt">
-  <meta name="author" content="Arvind Narayanan">
-  <title>Overview</title>
-  <link rel="stylesheet" href="style.css">
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
-</head>
-<body>
-<article>
-<header>
-<div id="chapter">Chapter 1</div>
-<h1 class="title">Overview</h1>
-</header>
- <nav id="TOC">
-<div id="menuToggle">
-<a class="toggle" tabindex="0" ><img src="assets/hamburger_icon.svg" alt="hamburger" id="hamburger"></a>
-<a id="index" href="index.html"><img src="assets/home.png" alt="home" id="home"></a>
-<ul>
-</ul>
-</div>
-</nav>
-<p> “Open data and content can be freely used, modified, and shared by anyone for any purpose.” - <a href="https://opendefinition.org/">Open Knowledge Foundation</a>
-  </p>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="pandoc">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="author" content="Stanford Open Data Project">
+    <meta name="author" content="Northwestern Open Data Initiative">
+    <title>Overview | Open Data Campus</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style-new.css">
+  </head>  
+    
+  <body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark blue-nav" >
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.html">Open Data Campus</a>
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item show-mobile">
+              <a class="nav-link" href="overview.html">Overview</a>
+          </li>
+          <li class="nav-item show-mobile">
+              <a class="nav-link" href="constructing.html">Constructing a Vision</a>
+          </li>
+          <li class="nav-item show-mobile">
+              <a class="nav-link" href="building.html">Building an Open Data Portal</a>
+          </li>
+          <li class="nav-item show-mobile">
+              <a class="nav-link" href="governance.html">Data Governance</a>
+          </li>
+          <li class="nav-item show-mobile">
+              <a class="nav-link" href="useful.html">Making Your Data Portal Useful</a>
+          </li>
+          <li class="nav-item show-mobile">
+              <a class="nav-link" href="case-studies.html">Case Studies</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="">Examples</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Contact</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+    <main>
+        <div class="hidden" style="margin: 0px; float: left; padding-top: 50px; max-width: 270px; position: fixed">
+          <ol>
+              <li class="counter"><a href="overview.html">Overview</a></li>
+              <li class="counter"><a class="inactive-li" href="constructing.html">Constructing a Vision</a></li>
+              <li class="counter"><a class="inactive-li" href="building.html">Building a Data Portal</a></li>
+              <li class="counter"><a class="inactive-li" href="governance.html">Data Governance</a></li>
+              <li class="counter"><a class="inactive-li" href="useful.html">Making Your Data Portal Useful</a></li>
+              <li class="counter"><a class="inactive-li" href="case-studies.html">Case Studies</a></li>
+          </ol>
+        </div>
+        <article>
+            <div class="heading">
+                <h1>Chapter 1: Overview</h1>
+                <h2>
+                  “Open data and content can be freely used, modified, and shared by anyone for any purpose.”
+                  - <a href="https://opendefinition.org/">Open Knowledge Foundation</a></h2>
+            </div>
+            <section>
 
-<p>Open data is data that anyone can <a href="https://theodi.org/article/what-is-open-data-and-why-should-we-care/"> use, access, and share </a>. The concept of open data is predicated on the belief that openness fosters desirable outcomes. Too often, information is locked behind passwords, hidden within antiquated systems, or trapped in PDFs. Opening up these data would empower community stakeholders to advocate for transparency, public engagement, and accountability from those who hold power.</p>
+              <p>Open data is data that anyone can <a href="https://theodi.org/article/what-is-open-data-and-why-should-we-care/">use, access, and share.</a>
+                The concept of open data is predicated on the belief that openness fosters desirable outcomes. 
+                Too often, information is locked behind passwords, hidden within antiquated systems, or trapped in PDFs. 
+                <mark>Opening up these data would empower community stakeholders to advocate for transparency, public engagement, and accountability from those who hold power.</mark>
+              </p>
 
-<p>At the national level, Title II of the Foundations for Evidence-Based Policymaking Act of 2018 mandated the creation of <a href="https://www.data.gov/open-gov/">Data.gov</a>. Since then, federal agencies have been required to publish certain information as open data, utilizing standard machine-readable data formats with metadata stored in Data.gov.  The government has also established <a href="https://project-open-data.cio.gov/principles/">principles</a> for open data, which outline that data should be public, accessible, documented, reusable, complete, timely, and managed post-release. These guidelines form the backdrop for the ideas and recommendations throughout this guide. 
-</p>
-  
-<p>Like many government entities, universities are vital social institutions and stewards of public funds. Universities are also committed to the open sharing of ideas and to educating the next generation of innovators, researchers, and public leaders. These roles of the university motivate the principles of transparency, public engagement, and accountability.
-</p>
-  
-<p>Currently, data about universities — such as information on finances, student life, and academics — is often unavailable to the public, locked within opaque university websites, or stored in unstructured formats. Our interviews with student journalists, campus organizations, and university faculty revealed that easy data access shapes the types of stories that are told and analyses that are conducted, and every additional hurdle to data access increases the cost of discovering information. While some universities have begun addressing these hurdles, we have noticed a lack of resources that exist to support open data standards and initiatives at universities.
-</p>
-  
-<p> The purpose of this guide is to support the creation of successful open data organizations on college campuses. We hope you use this document as a set of suggestions for leading open data efforts on your own campus. Our insights and recommendations are informed by our experiences leading open data efforts at <a href="https://sodp.netlify.app/#/">Stanford University</a> and <a href="nodi.nu">Northwestern University</a>, as well as extensive input from the leaders of numerous campus organizations, open data initiatives, and civic tech initiatives across the country. However, because this guide is grounded in our personal experiences at our respective institutions, we hope you will use these insights as a starting point to adapt within your own community. Additionally, we include a section on data governance, an institutional framework that promotes accountable and ethical “planning, oversight, and control of [data management, data usage, and data-related sources]”, that is contextualized for universities <a href="https://www.cio.com/article/3521011/what-is-data-governance-a-best-practices-framework-for-managing-data-assets.html">(DAMA)</a>.
-  </p>
-<p> The sections are roughly ordered in the sequence we feel you should think about each topic. As you build your data portal, we hope that this guide can serve as a reference and a guide as you navigate the many obstacles incurred as you start your own open data portal.
-  </p>
-  <div id="lastupdate">
-Last updated: Sun Sep 20 2020
-</div>
-</article>
-</body>
+              <p>At the national level, <b>Title II of the Foundations for Evidence-Based Policymaking Act of 2018</b> mandated the creation of <a href="https://www.data.gov/open-gov/">Data.gov.</a>
+                Since then, federal agencies have been required to publish certain information as open data, utilizing standard machine-readable data formats with metadata stored in Data.gov.  
+                The government has also established <a href="https://project-open-data.cio.gov/principles/">principles</a> for <em>open data</em>, which outline that data should be <mark>public, accessible, documented, reusable, complete, timely, and managed post-release.</mark> 
+                These guidelines form the backdrop for the ideas and recommendations throughout this guide. 
+              </p>
+                
+              <p>Like many government entities, universities are <b>vital social institutions and stewards of public funds.</b> 
+                Universities are also committed to the open sharing of ideas and to educating the next generation of innovators, researchers, and public leaders.
+                 These roles of the university motivate the principles of transparency, public engagement, and accountability.
+              </p>
+                
+              <p>Currently, data about universities — such as information on finances, student life, and academics — is often unavailable to the public, locked within opaque university websites, or stored in unstructured formats. 
+                Our interviews with student journalists, campus organizations, and university faculty revealed that <mark>easy data access shapes the types of stories that are told and analyses that are conducted, and every additional hurdle to data access increases the cost of discovering information.</mark> 
+                While some universities have begun addressing these hurdles, we have noticed a lack of resources that exist to support open data standards and initiatives at universities.
+              </p>
+
+              <div class="keyidea-container">
+                <p class="keyidea">MISSION</p>
+                The purpose of this guide is to support the creation of successful open data organizations on college campuses. 
+                We hope you use this document as a set of suggestions for leading open data efforts on your own campus. 
+              </div>
+
+              <p>
+                Our insights and recommendations are informed by our experiences leading open data efforts at <a href="https://stanfordopendata.org/">Stanford University</a> and <a href="http://nodi.nu">Northwestern University</a>, as well as extensive input from the leaders of numerous campus organizations, open data initiatives, and civic tech initiatives across the country. 
+                However, because this guide is grounded in our personal experiences at our respective institutions, <mark>we hope you will use these insights as a starting point to adapt within your own community.</mark>
+                Additionally, we include a section on <a href="governance.html">data governance</a>, an institutional framework that promotes accountable and ethical “planning, oversight, and control of [data management, data usage, and data-related sources]”, that is contextualized for universities (<a href="https://www.cio.com/article/3521011/what-is-data-governance-a-best-practices-framework-for-managing-data-assets.html">DAMA</a>).
+              </p>
+
+              <p>
+                The sections are roughly ordered in the sequence we feel you should think about each topic. As you build your data portal, we hope that this guide can serve as a reference and a guide as you navigate the many obstacles incurred as you start your own open data portal.         
+              </p>
+                
+            </section>
+            <a href="index.html" style="float: left" class="button-secondary">Previous</a>
+            <a href="constructing.html" style="float: right" class="button">Next</a>
+        </article>
+    </main>
+    <!--SCRIPTING-->
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
 </html>
