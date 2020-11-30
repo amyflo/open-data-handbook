@@ -44,8 +44,8 @@ mark{
 }
 .keyidea{
 	font-weight: 600;
-	font-size: 16px;
-	color: #0066FF;
+    font-size: 16px;
+    color: #125ed0;
 	font-style: normal;
 }
 
@@ -115,7 +115,7 @@ h1{
 }
 b{
  font-weight: 600;
- color: #505050;
+ color: #125ed0;
 }
 h2{
  color: #0066FF;
@@ -124,6 +124,10 @@ h2{
 h3{
  margin: 20px 0px;
  color: #282828;
+}
+h4{
+    margin: 20px 0px;
+    color: #282828;
 }
 .heading{
  margin: 30px 0px;
@@ -220,7 +224,7 @@ ol {
 .counter::before {
  counter-increment: section;
  content: counters(section, ".") " ";
- color: #0066FF;
+ color: #125ed0;
  font-weight: 500;
 }
 
@@ -272,4 +276,8 @@ ol {
 
   .hidden{
       height: 100%;
+  }
+
+  figcaption{
+    color: #125ed0;
   }
