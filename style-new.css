@@ -40,7 +40,8 @@ mark{
 }
 .keyidea-container:hover{
 	box-shadow: 5px 5px 5px #ededed60;
-	transition: 0.3s;
+    transition: 0.3s;
+    transform: scale(1.01);
 }
 .keyidea{
 	font-weight: 600;
