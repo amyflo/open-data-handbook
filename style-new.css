@@ -1,6 +1,11 @@
 html{
 	scroll-behavior: smooth;
 }
+
+::selection {
+    background-color: #e8f1ff;
+}
+
 body{
     color: #585858;
     animation: fadeInAnimation ease 2s;
