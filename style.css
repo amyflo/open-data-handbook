@@ -95,6 +95,10 @@ mark{
 	margin: auto;
 	width: 100%;
     }
+    main{
+        margin: auto;
+        width: 80%;
+    }
 }
 
 @media screen and (min-width: 800px){
