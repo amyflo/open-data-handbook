@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="generator" content="pandoc">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta name="author" content="Stanford Open Data Project">
-    <meta name="author" content="Northwestern Open Data Initiative">
-    <title>Building a Data Portal | Open Data Campus</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="style.css">
-  </head>  
+
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="author" content="Stanford Open Data Project">
+  <meta name="author" content="Northwestern Open Data Initiative">
+  <title>Building a Data Portal | Open Data Campus</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
-  <nav class="navbar navbar-expand-md bg-dark navbar-dark blue-nav" >
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark blue-nav">
     <!-- Brand -->
     <a class="navbar-brand" href="index.html">Open Data Campus</a>
     <!-- Toggler/collapsibe Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
+
     <!-- Navbar links -->
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
@@ -27,24 +29,24 @@
           <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item show-mobile">
-            <a class="nav-link" href="overview.html">Overview</a>
+          <a class="nav-link" href="overview.html">Overview</a>
         </li>
         <li class="nav-item show-mobile">
-            <a class="nav-link" href="constructing.html">Constructing a Vision</a>
+          <a class="nav-link" href="constructing.html">Constructing a Vision</a>
         </li>
         <li class="nav-item show-mobile">
-            <a class="nav-link" href="building.html">Building an Open Data Portal</a>
+          <a class="nav-link" href="building.html">Building an Open Data Portal</a>
         </li>
         <li class="nav-item show-mobile">
-            <a class="nav-link" href="governance.html">Data Governance</a>
+          <a class="nav-link" href="governance.html">Data Governance</a>
         </li>
         <li class="nav-item show-mobile">
-            <a class="nav-link" href="useful.html">Making Your Data Portal Useful</a>
+          <a class="nav-link" href="useful.html">Making Your Data Portal Useful</a>
         </li>
         <li class="nav-item show-mobile">
-            <a class="nav-link" href="case-studies.html">Case Studies</a>
+          <a class="nav-link" href="case-studies.html">Case Studies</a>
         </li>
-        
+
         <li class="nav-item">
           <a class="nav-link" href="index.html#examples">Explore</a>
         </li>
@@ -53,160 +55,237 @@
         </li>
       </ul>
     </div>
-</nav>
-  
+  </nav>
+
   <main>
     <div class="hidden" style="margin: 0px; float: left; padding-top: 50px; max-width: 270px; position: fixed">
       <ol>
-          <li class="counter">
-              <a class="inactive-li" href="overview.html">Overview</a>
-          </li>
-          <li class="counter"><a class="inactive-li" href="constructing.html">Constructing a Vision</a>
-          </li>
-          <li class="counter"><a href="building.html">Building a Data Portal</a>
-            <ol>
-              <li class="counter"><a class="active-li" href="#3.1">Timeline and Product Management</a></li>
-              <li class="counter"><a class="active-li" href="#3.2">Front-End Development</a></li>
-              <li class="counter"><a class="active-li" href="#3.3">Back-End Development</a></li>
-              <li class="counter"><a class="active-li" href="#3.4">Open Data Pipeline Examples</a></li>
-              <li class="counter"><a class="active-li" href="#3.5">Additional Considerations</a></li>
-              <li class="counter"><a class="active-li" href="#3.6">Recommended Resources</a></li>
-          </ol></li>
-          <li class="counter"><a class="inactive-li" href="governance.html">Data Governance</a></li>
-          <li class="counter"><a class="inactive-li" href="governance.html">Making Your Data Portal Useful</a></li>
-          <li class="counter"><a class="inactive-li" href="governance.html">Case Studies</a></li>
+        <li class="counter">
+          <a class="inactive-li" href="overview.html">Overview</a>
+        </li>
+        <li class="counter"><a class="inactive-li" href="constructing.html">Constructing a Vision</a>
+        </li>
+        <li class="counter"><a href="building.html">Building a Data Portal</a>
+          <ol>
+            <li class="counter"><a class="active-li" href="#3.1">Timeline and Product Management</a></li>
+            <li class="counter"><a class="active-li" href="#3.2">Front-End Development</a></li>
+            <li class="counter"><a class="active-li" href="#3.3">Back-End Development</a></li>
+            <li class="counter"><a class="active-li" href="#3.4">Open Data Pipeline Examples</a></li>
+            <li class="counter"><a class="active-li" href="#3.5">Additional Considerations</a></li>
+            <li class="counter"><a class="active-li" href="#3.6">Recommended Resources</a></li>
+          </ol>
+        </li>
+        <li class="counter"><a class="inactive-li" href="governance.html">Data Governance</a></li>
+        <li class="counter"><a class="inactive-li" href="governance.html">Making Your Data Portal Useful</a></li>
+        <li class="counter"><a class="inactive-li" href="governance.html">Case Studies</a></li>
       </ol>
     </div>
     <article>
-    <div class="heading">
-      <h1>Chapter 3: Building a Data Portal</h1>
-      <h2>We detail the tools and workflows to build an open data portal.</h2>
-    </div>
-
-    <section id="3.1">
-      <h3><b>3.1</b> Timeline and Product Management</h3>
-      <p>Building an open data portal requires a methodological approach to the development process. The recommended process is based on the agile development model called Scrum. Scrum is based on a small set of core values such as:
-      <ul>
-        <li>
-          <b>Individuals and interactions</b> over processes and tools
-        </li>
-        <li><b>Working software</b> over comprehensive documentation
-        </li>
-        <li><b>Responding to change</b> over following a plan</li>
-      </ul>
-    </p>
-      <p>At a high level, the Scrum agile development holds all stakeholders of the project accountable from the team, individuals, and any advisors. It is always important to keep in mind a longer timeline focused on the target date for the team to launch a MVP, or minimal viable product, and a shorter timeline focused on the tasks for each week&rsquo;s sprints.</p>
-      <p>Refer to <a href="https://www.atlassian.com/agile/scrum" target="_blank" rel="noopener">this guide</a> for more details on Scrum.</p>
-    </section>
-
-    <section id="3.2">
-      <h3><b>3.2</b> Front-End Development</h3>
-      <p>The front-end of your portal will be your first and main point of contact with new users. In the following section, we discuss key features and design principles to maximize user experience.</p>
-      <div class="accordion-container">
-        <button class="accordion">Home Page</button>
-        <div class="panel">
-          <p>A simple, user-centered home page is the bedrock of any data portal. It should have <b>clear access points</b> to the various functions of your website and be <b>accessible to any user</b>. For example, a good front page might include:</p>
-          <ul>
-          <li>A short description of the website&rsquo;s purpose</li>
-          <li>The ability to search for and/or easily find datasets on the portal</li>
-          <li>Featured datasets that showcase high-value datasets to your community members</li>
-          <li>Featured projects to highlight the outcomes of your data portal.&nbsp;</li>
-          </ul>
-        </div>
-
-        <button class="accordion">Datasets</button>
-        <div class="panel">
-          <p>An open data portal should have a <b>page that links to all available datasets</b>. This page should contain:</p>
-          <ul>
-          <li>The ability to search and filter datasets</li>
-          <li>Metadata such as description, data type, and publication date to better capture the context of each dataset</li>
-          </ul>
-        </div>
-
-        <button class="accordion">Contribute Page</button>
-        <div class="panel">
-          <p><b>Contributing to your portal should be simple and encouraged.</b> Here are a few pipelines that you should consider:</p>
-          <ul>
-          <li>Projects sourced from your users, and hopefully aligned with goals within your community.</li>
-          <li>Datasets collected by users that may be helpful to the broader community.</li>
-          <li>Requests for datasets that don&rsquo;t exist on your portal yet. Getting this type of feedback from real users who have a use for these datasets is an invaluable contribution to your conversations with administration as you continue to add datasets to your portal.</li>
-          </ul>
-        </div>
-        <button class="accordion">About Us / Contact Us</button>
-        <div class="panel">
-          <p>A data portal built by students, for students should be showcased as such. Leave this page to <b>tell your group&rsquo;s story and motivations</b>. Provide outlets for feedback, questions, and requests from community members looking to get involved, and respond to these requests in a timely manner.</p>
-        </div>
-        <button class="accordion">Accessibility</button>
-        <div class="panel">
-          <p>The style of your open data portal should feel <b>welcoming, clean, and user-friendly</b> with minimal attributes. Have some fun choosing colors and themes that support your vision for the aesthetic; just be sure to follow <a href="https://adasitecompliance.com/ada-color-contrast-checker/" target="_blank" rel="noopener">ADA Site Compliance</a>. Assume many of your users won&rsquo;t know about open data portals and incorporate features that can engage users from a broad range of backgrounds. A good way to check whether or not you&rsquo;ve done a good job with this is to reference <a href="http://www.uxness.in/2015/02/10-heuristic-principles-jakob-nielsens.html" target="_blank" rel="noopener">these 10 heuristic principles</a>.</p>
-        </div>
+      <div class="heading">
+        <h1>Chapter 3: Building a Data Portal</h1>
+        <h2>We detail the tools and workflows to build an open data portal.</h2>
       </div>
-    </section>
 
-    <section id="3.3">
-      <h3><b>3.3</b> Back-End Development</h3>
-      <p>Some open data portals may choose to go serverless. Regardless of whether you have a full-out database and server you will need some sort of backend datastore and system for managing permissions on users. Here are some general best practices for creating an effective open data portal backend that is applicable for college students.</p>
-      <div class="accordion-container">
-        <button class="accordion">Search and Filtering</button>
-        <div class="panel">
-          <p>Implement some <b>way to filter and search datasets</b> on your website. This may require backend database structuring or can be done on the frontend using a React module.</p>
-        </div>
+      <section id="3.1">
+        <h3><b>3.1</b> Timeline and Product Management</h3>
+        <p>Building an open data portal requires a methodological approach to the development process. The recommended
+          process is based on the agile development model called Scrum. Scrum is based on a small set of core values
+          such as:
+        <ul>
+          <li>
+            <b>Individuals and interactions</b> over processes and tools
+          </li>
+          <li><b>Working software</b> over comprehensive documentation
+          </li>
+          <li><b>Responding to change</b> over following a plan</li>
+        </ul>
+        </p>
+        <p>At a high level, the Scrum agile development holds all stakeholders of the project accountable from the team,
+          individuals, and any advisors. It is always important to keep in mind a longer timeline focused on the target
+          date for the team to launch a MVP, or minimal viable product, and a shorter timeline focused on the tasks for
+          each week&rsquo;s sprints.</p>
+        <p>Refer to <a href="https://www.atlassian.com/agile/scrum" target="_blank" rel="noopener">this guide</a> for
+          more details on Scrum.</p>
+      </section>
 
-        <button class="accordion">Dataset Storage</button>
-        <div class="panel">
-          <p><b>Datasets can be stored in the cloud</b> with Amazon Web Services (S3), Microsoft Azure (Azure Blob), Google Cloud (GCS) or another provider. You can also utilize your own server and store datasets locally as well, though we advise against this because it adds additional complexity.</p>
-        </div>
+      <section id="3.2">
+        <h3><b>3.2</b> Front-End Development</h3>
+        <p>The front-end of your portal will be your first and main point of contact with new users. In the following
+          section, we discuss key features and design principles to maximize user experience.</p>
+        <div class="accordion-container">
+          <button class="accordion">Home Page</button>
+          <div class="panel">
+            <p>A simple, user-centered home page is the bedrock of any data portal. It should have <b>clear access
+                points</b> to the various functions of your website and be <b>accessible to any user</b>. For example, a
+              good front page might include:</p>
+            <ul>
+              <li>A short description of the website&rsquo;s purpose</li>
+              <li>The ability to search for and/or easily find datasets on the portal</li>
+              <li>Featured datasets that showcase high-value datasets to your community members</li>
+              <li>Featured projects to highlight the outcomes of your data portal.&nbsp;</li>
+            </ul>
+          </div>
 
-        <button class="accordion">Metadata Storage</button>
-        <div class="panel">
-          <p>A relatively convenient structure for an open data portal is to <b>store metadata in a separate file from your datasets</b>. This enables you to query your metadata and populate a dataset listings page without having to get all your datasets.</p>
-        </div>
+          <button class="accordion">Datasets</button>
+          <div class="panel">
+            <p>An open data portal should have a <b>page that links to all available datasets</b>. This page should
+              contain:</p>
+            <ul>
+              <li>The ability to search and filter datasets</li>
+              <li>Metadata such as description, data type, and publication date to better capture the context of each
+                dataset</li>
+            </ul>
+          </div>
 
-        
-        <button class="accordion">Permissions/Authentication System</button>
-        <div class="panel">
-          <p><b>Only authorized users should be able to update metadata and datasets</b> regardless of how or where you store them. Such a permissions system can be as simple as storing your metadata in a Google Sheet that is shared with only a specific set of people and having a similar setup in AWS or another datastore for your datasets.</p>
+          <button class="accordion">Contribute Page</button>
+          <div class="panel">
+            <p><b>Contributing to your portal should be simple and encouraged.</b> Here are a few pipelines that you
+              should consider:</p>
+            <ul>
+              <li>Projects sourced from your users, and hopefully aligned with goals within your community.</li>
+              <li>Datasets collected by users that may be helpful to the broader community.</li>
+              <li>Requests for datasets that don&rsquo;t exist on your portal yet. Getting this type of feedback from
+                real users who have a use for these datasets is an invaluable contribution to your conversations with
+                administration as you continue to add datasets to your portal.</li>
+            </ul>
+          </div>
+          <button class="accordion">About Us / Contact Us</button>
+          <div class="panel">
+            <p>A data portal built by students, for students should be showcased as such. Leave this page to <b>tell
+                your group&rsquo;s story and motivations</b>. Provide outlets for feedback, questions, and requests from
+              community members looking to get involved, and respond to these requests in a timely manner.</p>
+          </div>
+          <button class="accordion">Accessibility</button>
+          <div class="panel">
+            <p>The style of your open data portal should feel <b>welcoming, clean, and user-friendly</b> with minimal
+              attributes. Have some fun choosing colors and themes that support your vision for the aesthetic; just be
+              sure to follow <a href="https://adasitecompliance.com/ada-color-contrast-checker/" target="_blank"
+                rel="noopener">ADA Site Compliance</a>. Assume many of your users won&rsquo;t know about open data
+              portals and incorporate features that can engage users from a broad range of backgrounds. A good way to
+              check whether or not you&rsquo;ve done a good job with this is to reference <a
+                href="http://www.uxness.in/2015/02/10-heuristic-principles-jakob-nielsens.html" target="_blank"
+                rel="noopener">these 10 heuristic principles</a>.</p>
+          </div>
         </div>
-      </div>
-    </section>
-    <section id="3.4">
-      <h3><b>3.4</b> Open Data Pipeline Examples</h3>
-    <h4><a href="https://github.com/rahulsshukla/nu_open_data_initiative" target="_blank" rel="noopener">Northwestern Open Data Initiative</a></h4>
-    <p>The Northwestern Open Data Initiative implemented a full-stack Django-React hybridized server in an all-in-one folder to make deployment easy. To store metadata, the team uses PostgreSQL. To store the actual datasets, their back-end team developed a process of first storing datasets in an &lsquo;unapproved&rsquo; AWS S3 bucket, approving them on a Django-based admin panel, and then moving them to the &lsquo;approved&rsquo; AWS S3 bucket. The Django admin panel will allow for non-technical members to view datasets, see user engagement, and approve datasets - a helpful feature as we develop the portal as a product. The React front-end makes requests to the AWS S3 upload url through the Django back-end.</p>
-    <p>On the React-based front-end, the team utilized user-centered design principles in accordance with the <a href="https://docs.google.com/document/d/15hiM6Hl8I116pgg1Qw7fmKQk4qTE0rwsfh7ikzxC07c/edit#bookmark=id.wib7q6aseyan" target="_blank" rel="noopener">data governance protocol</a> mentioned later in this document. For example, in working with the Northwestern Data Governance group, the front-end team created an &lsquo;Upload&rsquo; form that asks targeted questions to accurately capture the context and description of a dataset. An uploader cannot submit the form without filling all the required fields dictated by our data governance protocol. In addition, they made the deliberate decision to force a user to view the metadata of a dataset before a user is able to download the dataset.&nbsp;</p>
-    <h4><a href="https://github.com/StanfordOpenData/open-data-portal" target="_blank" rel="noopener">Stanford Open Data Project</a></h4>
-    <p>The Stanford Open Data Portal implemented a React frontend hosted using Netlify with AWS S3 buckets for dataset storage. Metadata is stored in a google spreadsheet and a Python script calls the Google Sheets API to download the metadata spreadsheet, convert to JSON, and upload to S3. The AWS console can be used to easily drag and drop both the metadata and individual datasets in CSV format for upload. Another option is to utilize boto3 in the terminal for programmatic access to S3. Credentials in AWS can be managed to give only designated individuals permissions to upload new datasets. Similarly, permissions on Google Sheets can be managed to control access to metadata.&nbsp;</p>
-    <p>The React frontend can easily access data and metadata stored in AWS by directly making ajax calls to S3t without the need for a server. This reduces complexity and allows those with less programming experience or those who do not want to have a server to get their open data portal up and running. Additionally, the Stanford team has a Google Form that it has sent out to several news organizations and on-campus groups to allow for easy dataset submission. The form included questions that we deemed necessary to represent the dataset&rsquo;s context.</p>
-    </section>
-    <section id="3.5">
-    <h3><b>3.5</b> Additional Considerations</h3>
-    <p><mark>Google Analytics is a useful tool for monitoring activity on your portal. Use it to identify pain points in your user&rsquo;s experience as well as determine which datasets users are engaging with.</mark>&nbsp;</p>
-      <p>Converting data from PDFs to CSVs is an important yet time-consuming task that will likely arise when you are obtaining datasets for your portal. We recommend the following tool for easy PDF scraping: <a href="https://tabula.technology" target="_blank" rel="noopener">https://tabula.technology</a>.</p>
-    </section>
-    <section id="3.6">
-    <h3><b>3.6</b> Recommended Resources</h3>
-    <p>Building an open data portal requires knowledge of full-stack development that can be daunting to even relatively experienced university-aged coders. Here are some resources we have collected that may help with building an open data portal.</p>
-    <ul>
-    <li><a href="https://docs.aws.amazon.com/quickstarts/latest/s3backup/step-1-create-bucket.html" target="_blank" rel="noopener">How to setup an AWS S3 Bucket</a></li>
-    <li><a href="https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6" target="_blank" rel="noopener">Basics for Github</a></li>
-    <li><a href="https://www.atlassian.com/git/tutorials/what-is-version-control" target="_blank" rel="noopener">Git Version Control</a></li>
-    <li><a href="https://towardsdatascience.com/leveraging-python-with-large-databases-pandas-postgresql-5073825167e0" target="_blank" rel="noopener">Setting up a</a><a href="https://towardsdatascience.com/how-to-set-up-a-postgresql-database-on-amazon-rds-64e8d144179e" target="_blank" rel="noopener">PostgreSQL database</a></li>
-    <li><a href="https://docs.djangoproject.com/en/3.0/intro/tutorial01/" target="_blank" rel="noopener">Django</a></li>
-    <li><a href="https://reactjs.org/tutorial/tutorial.html" target="_blank" rel="noopener">React</a></li>
-    <li><a href="https://developers.google.com/sheets/api/quickstart/python" target="_blank" rel="noopener">Google sheets API</a></li>
-    <li><a href="https://aws.amazon.com/activate/" target="_blank" rel="noopener">How to get AWS Credits</a></li>
-    </ul>
-  </section>
-  <section>
-    <a href="constructing.html" style="float: left" class="button-secondary">Previous</a>
-    <a href="governance.html" style="float: right" class="button">Next</a>
-  </section>
-</article>
-</main>
-<!--SCRIPTING-->
-<script src="script.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      </section>
+
+      <section id="3.3">
+        <h3><b>3.3</b> Back-End Development</h3>
+        <p>Some open data portals may choose to go serverless. Regardless of whether you have a full-out database and
+          server you will need some sort of backend datastore and system for managing permissions on users. Here are
+          some general best practices for creating an effective open data portal backend that is applicable for college
+          students.</p>
+        <div class="accordion-container">
+          <button class="accordion">Search and Filtering</button>
+          <div class="panel">
+            <p>Implement some <b>way to filter and search datasets</b> on your website. This may require backend
+              database structuring or can be done on the frontend using a React module.</p>
+          </div>
+
+          <button class="accordion">Dataset Storage</button>
+          <div class="panel">
+            <p><b>Datasets can be stored in the cloud</b> with Amazon Web Services (S3), Microsoft Azure (Azure Blob),
+              Google Cloud (GCS) or another provider. You can also utilize your own server and store datasets locally as
+              well, though we advise against this because it adds additional complexity.</p>
+          </div>
+
+          <button class="accordion">Metadata Storage</button>
+          <div class="panel">
+            <p>A relatively convenient structure for an open data portal is to <b>store metadata in a separate file from
+                your datasets</b>. This enables you to query your metadata and populate a dataset listings page without
+              having to get all your datasets.</p>
+          </div>
+
+
+          <button class="accordion">Permissions/Authentication System</button>
+          <div class="panel">
+            <p><b>Only authorized users should be able to update metadata and datasets</b> regardless of how or where
+              you store them. Such a permissions system can be as simple as storing your metadata in a Google Sheet that
+              is shared with only a specific set of people and having a similar setup in AWS or another datastore for
+              your datasets.</p>
+          </div>
+        </div>
+      </section>
+      <section id="3.4">
+        <h3><b>3.4</b> Open Data Pipeline Examples</h3>
+        <h4><a href="https://github.com/rahulsshukla/nu_open_data_initiative" target="_blank"
+            rel="noopener">Northwestern Open Data Initiative</a></h4>
+        <p>The Northwestern Open Data Initiative implemented a full-stack Django-React hybridized server in an
+          all-in-one folder to make deployment easy. To store metadata, the team uses PostgreSQL. To store the actual
+          datasets, their back-end team developed a process of first storing datasets in an &lsquo;unapproved&rsquo; AWS
+          S3 bucket, approving them on a Django-based admin panel, and then moving them to the &lsquo;approved&rsquo;
+          AWS S3 bucket. The Django admin panel will allow for non-technical members to view datasets, see user
+          engagement, and approve datasets - a helpful feature as we develop the portal as a product. The React
+          front-end makes requests to the AWS S3 upload url through the Django back-end.</p>
+        <p>On the React-based front-end, the team utilized user-centered design principles in accordance with the <a
+            href="https://docs.google.com/document/d/15hiM6Hl8I116pgg1Qw7fmKQk4qTE0rwsfh7ikzxC07c/edit#bookmark=id.wib7q6aseyan"
+            target="_blank" rel="noopener">data governance protocol</a> mentioned later in this document. For example,
+          in working with the Northwestern Data Governance group, the front-end team created an &lsquo;Upload&rsquo;
+          form that asks targeted questions to accurately capture the context and description of a dataset. An uploader
+          cannot submit the form without filling all the required fields dictated by our data governance protocol. In
+          addition, they made the deliberate decision to force a user to view the metadata of a dataset before a user is
+          able to download the dataset.&nbsp;</p>
+        <h4><a href="https://github.com/StanfordOpenData/open-data-portal" target="_blank" rel="noopener">Stanford Open
+            Data Project</a></h4>
+        <p>The Stanford Open Data Portal implemented a React frontend hosted using Netlify with AWS S3 buckets for
+          dataset storage. Metadata is stored in a google spreadsheet and a Python script calls the Google Sheets API to
+          download the metadata spreadsheet, convert to JSON, and upload to S3. The AWS console can be used to easily
+          drag and drop both the metadata and individual datasets in CSV format for upload. Another option is to utilize
+          boto3 in the terminal for programmatic access to S3. Credentials in AWS can be managed to give only designated
+          individuals permissions to upload new datasets. Similarly, permissions on Google Sheets can be managed to
+          control access to metadata.&nbsp;</p>
+        <p>The React frontend can easily access data and metadata stored in AWS by directly making ajax calls to S3t
+          without the need for a server. This reduces complexity and allows those with less programming experience or
+          those who do not want to have a server to get their open data portal up and running. Additionally, the
+          Stanford team has a Google Form that it has sent out to several news organizations and on-campus groups to
+          allow for easy dataset submission. The form included questions that we deemed necessary to represent the
+          dataset&rsquo;s context.</p>
+      </section>
+      <section id="3.5">
+        <h3><b>3.5</b> Additional Considerations</h3>
+        <p><mark>Google Analytics is a useful tool for monitoring activity on your portal. Use it to identify pain
+            points in your user&rsquo;s experience as well as determine which datasets users are engaging
+            with.</mark>&nbsp;</p>
+        <p>Converting data from PDFs to CSVs is an important yet time-consuming task that will likely arise when you are
+          obtaining datasets for your portal. We recommend the following tool for easy PDF scraping: <a
+            href="https://tabula.technology" target="_blank" rel="noopener">https://tabula.technology</a>.</p>
+      </section>
+      <section id="3.6">
+        <h3><b>3.6</b> Recommended Resources</h3>
+        <p>Building an open data portal requires knowledge of full-stack development that can be daunting to even
+          relatively experienced university-aged coders. Here are some resources we have collected that may help with
+          building an open data portal.</p>
+        <ul>
+          <li><a href="https://docs.aws.amazon.com/quickstarts/latest/s3backup/step-1-create-bucket.html"
+              target="_blank" rel="noopener">How to setup an AWS S3 Bucket</a></li>
+          <li><a href="https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6" target="_blank"
+              rel="noopener">Basics for Github</a></li>
+          <li><a href="https://www.atlassian.com/git/tutorials/what-is-version-control" target="_blank"
+              rel="noopener">Git Version Control</a></li>
+          <li><a
+              href="https://towardsdatascience.com/leveraging-python-with-large-databases-pandas-postgresql-5073825167e0"
+              target="_blank" rel="noopener">Setting up a</a><a
+              href="https://towardsdatascience.com/how-to-set-up-a-postgresql-database-on-amazon-rds-64e8d144179e"
+              target="_blank" rel="noopener">PostgreSQL database</a></li>
+          <li><a href="https://docs.djangoproject.com/en/3.0/intro/tutorial01/" target="_blank"
+              rel="noopener">Django</a></li>
+          <li><a href="https://reactjs.org/tutorial/tutorial.html" target="_blank" rel="noopener">React</a></li>
+          <li><a href="https://developers.google.com/sheets/api/quickstart/python" target="_blank" rel="noopener">Google
+              sheets API</a></li>
+          <li><a href="https://aws.amazon.com/activate/" target="_blank" rel="noopener">How to get AWS Credits</a></li>
+        </ul>
+      </section>
+      <section>
+        <a href="constructing.html" style="float: left" class="button-secondary">Previous</a>
+        <a href="governance.html" style="float: right" class="button">Next</a>
+      </section>
+    </article>
+  </main>
+  <!--SCRIPTING-->
+  <script src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
