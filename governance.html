@@ -235,15 +235,127 @@
         </section>
         <section id="4.6">
           <h3><b>4.6 </b>Data Governance Protocol</h3>
-          <p>We have put together a step-by-step process for assessing a dataset. The protocol has been reviewed by the Northwestern Data Governance group. The framework serves as both a checklist and a conversation-starter. The open data group should work to mitigate the risks and amplify the benefits of releasing a dataset. In most cases, the protocol will be used for datasets that are not already public but it can definitely still be applied to existing public datasets. It would be best to have conversations with the university administration, especially in determining the risk score, because they will have valuable information that most students would not know about. A dataset may unilaterally be considered 'un-publishable' by the administration even if it passes the process. Lastly, remember the  is <span style="font-style: italic;">guidance</span>, not a hard-and-fast rule. The weights and questions are based on our own experiences, discussions amongst ourselves, and discussions with experts in the field. Feel free to adjust the weights and questions based on your group&rsquo;s and university&rsquo;s needs.</p>
+          <p>We have put together a step-by-step process for assessing a dataset. The protocol has been reviewed by the Northwestern Data Governance group. The framework serves as both a checklist and a conversation-starter. The open data group should work to mitigate the risks and amplify the benefits of releasing a dataset. In most cases, the protocol will be used for datasets that are not already public but it can definitely still be applied to existing public datasets. It would be best to have conversations with the university administration, especially in determining the risk score, because they will have valuable information that most students would not know about. A dataset may unilaterally be considered 'un-publishable' by the administration even if it passes the process. Lastly, remember the  is <span style="font-style: italic;">guidance, not a hard-and-fast rule. The weights and questions are based on our own experiences, discussions amongst ourselves, and discussions with experts in the field. Feel free to adjust the weights and questions based on your group&rsquo;s and university&rsquo;s needs.</p>
           <p>Ask questions about what types of analysis are valid to conduct, the representativeness of the dataset, the completeness of the dataset, whether the dataset was the submitter&rsquo;s to share, etc. Meanwhile, we believe that administrative data should be more open to the public, as it is often the source by which university decisions are made; this makes it important for the public to be able to find biases and errors in the dataset. We have provided a simple matrix to determine if a dataset is okay to publish based on the source and sensitivity.&nbsp;</p>
+        
+          <style>
+            .likert li {
+              float: left;
+              list-style-type: none;
+              margin: 0px 3px;
+            }
+          </style>
+      
+          <div class="accordion-container">
+            <button class="accordion">Utility Quiz</button>
+                <div class="panel">
+          <form>
+            <div class="form-group">
+              <label>Can it stimulate new ideas and services?</label>
+              <ul class="likert">
+                <li>1</li>
+                <li><input type="radio" name="q1" value="1" /></li>
+                <li><input type="radio" name="q1" value="2" /></li>
+                <li><input type="radio" name="q1" value="3" /></li>
+                <li>3</li>
+              </ul>
+            </div>
+            <br />
+      
+            <div class="form-group">
+              <label>Additionally, is there a request for this dataset?</label><br>
+              <ul class="likert">
+                <input type="radio" name="q2" value="1" />Yes<br />
+                <input type="radio" name="q2" value="3" />No<br />
+                </ul>
+            </div>
+      
+            <div class="form-group">
+           <label>Can it stimulate new ideas and services?</label>
+              <ul class="likert">
+                <li>1</li>
+                <li><input type="radio" name="q3" value="1" /></li>
+                <li><input type="radio" name="q3" value="2" /></li>
+                <li><input type="radio" name="q3" value="3" /></li>
+                <li>3</li>
+              </ul>
+            </div>
+            <br/>
+      
+            <div class="form-group">
+              <label>
+                Does this data exist right now online (maybe in a different format)?
+                Does it have a purpose?
+              </label>
+              <ul class="likert">
+              <input type="radio" name="q4" value="1" />Yes, data exists publicly in
+              non-machine readable format <br>
+              <input type="radio" name="q4" value="3" />No, data is currently not
+              public<br>
+            </ul>
+            </div>
+      
+
+            <button type="submit" class="btn btn-primary" onclick="getQuizScore(this.form)">Submit</button>
+          </form></div>
+          <div>
+          </div>
+        </div>
+
+          <table class="tg">
+            <thead>
+              <tr>
+                <th class="tg-0lax" colspan="2" rowspan="2">Utility-Risk Matrix</th>
+                <th class="tg-baqh" colspan="4">Utility Level</th>
+              </tr>
+              <tr>
+                <td class="tg-gvcd">High (5+)</td>
+                <td class="tg-gvcd">Medium (3-4)</td>
+                <td class="tg-gvcd">Low (1-2)</td>
+                <td class="tg-gvcd">None (0)</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tg-v0nz" rowspan="4">Risk Level</td>
+                <td class="tg-gvcd">Minimal (0-2)</td>
+                <td class="tg-4epv">Very low<br>- Already public datasets</td>
+                <td class="tg-4epv">Very low<br>- Sports data</td>
+                <td class="tg-f9lm">Low<br>- US News<br>- Dining hall</td>
+                <td class="tg-68zd">Moderate<br>- Library volume data</td>
+              </tr>
+              <tr>
+                <td class="tg-gvcd">Low (3-4)</td>
+                <td class="tg-4epv">Very low</td>
+                <td class="tg-f9lm">Low<br>- transports to hospital</td>
+                <td class="tg-68zd">Moderate<br>- </td>
+                <td class="tg-zkro">Significant<br>- </td>
+              </tr>
+              <tr>
+                <td class="tg-gvcd">Medium (5-7)</td>
+                <td class="tg-f9lm">Low<br>- Crime data</td>
+                <td class="tg-68zd">Moderate<br>- Student demographic. data by category</td>
+                <td class="tg-zkro">Significant<br>- </td>
+                <td class="tg-cvqw">High<br>- Student ID numbers</td>
+              </tr>
+              <tr>
+                <td class="tg-gvcd">High (8-10+)</td>
+                <td class="tg-ekib">Moderate<br>-</td>
+                <td class="tg-zkro">Significant<br>- Religious affiliation<br>- Race / gender / identity<br>-  Alum. giving data</td>
+                <td class="tg-cvqw">High<br>-  Personal Health data</td>
+                <td class="tg-pclj">Extreme<br>- Student names and addresses</td>
+              </tr>
+            </tbody>
+            </table>
         </section>
+        
         <a href="building.html" style="float: left" class="button-secondary">Previous</a>
         <a href="useful.html" style="float: right" class="button">Next</a>
       </article>
     </main>
     <!--SCRIPTING-->
     <script src="script.js"></script>
+    <script src="utility-quiz.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
