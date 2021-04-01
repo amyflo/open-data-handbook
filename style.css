@@ -76,6 +76,9 @@ mark {
     margin: auto;
     width: 100%;
   }
+  #matrix{
+    font-size: 6px;
+  }
 }
 @media screen and (min-width: 600px) {
   article {
@@ -295,15 +298,21 @@ figcaption {
   color: #125ed0;
 }
 
+.likert li {
+    float: left;
+    list-style-type: none;
+    margin: 0px 3px;
+  }
+
 .tg {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 .tg td {
   border-color: #282828;
   border-style: solid;
   border-width: 1px;
-  font-size: 14px;
   overflow: hidden;
   padding: 10px 5px;
   word-break: normal;
@@ -312,7 +321,6 @@ figcaption {
   border-color: #282828;
   border-style: solid;
   border-width: 1px;
-  font-size: 14px;
   font-weight: normal;
   overflow: hidden;
   padding: 10px 5px;
@@ -371,4 +379,11 @@ figcaption {
   background-color: #ffc00070;
   text-align: left;
   vertical-align: top;
+}
+
+form{
+  border-radius: 30px;
+  padding: 5%;
+  border: 1px solid #e8f1ff;
+  box-shadow: 5px 5px 5px #ededed60;
 }
