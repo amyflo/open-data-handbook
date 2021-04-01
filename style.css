@@ -76,7 +76,7 @@ mark {
     margin: auto;
     width: 100%;
   }
-  #matrix{
+  #matrix {
     font-size: 6px;
   }
 }
@@ -299,10 +299,10 @@ figcaption {
 }
 
 .likert li {
-    float: left;
-    list-style-type: none;
-    margin: 0px 3px;
-  }
+  float: left;
+  list-style-type: none;
+  margin: 0px 3px;
+}
 
 .tg {
   border-collapse: collapse;
@@ -381,7 +381,7 @@ figcaption {
   vertical-align: top;
 }
 
-form{
+form {
   border-radius: 30px;
   padding: 5%;
   border: 1px solid #e8f1ff;
